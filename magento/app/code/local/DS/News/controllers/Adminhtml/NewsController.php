@@ -17,9 +17,17 @@ class DS_News_Adminhtml_NewsController extends Mage_Adminhtml_Controller_Action
     public function editAction()
     {
         $id = (int) $this->getRequest()->getParam('id');
-        Mage::register('current_news', Mage::getModel('dsnews/news')->load($id));
+        $model = Mage::getModel('dsnews/news');
+
+        if($data = Mage::getSingleton('adminhtml/session')->getFormData()){
+            $model->setData($data)->setId($id);
+        } else {
+            $model->load($id);
+        }
+        Mage::register('current_news', $model);
 
         $this->loadLayout()->_setActiveMenu('dsnews');
+        $this->_addLeft($this->getLayout()->createBlock('dsnews/adminhtml_news_edit_tabs'));
         $this->_addContent($this->getLayout()->createBlock('dsnews/adminhtml_news_edit'));
         $this->renderLayout();
     }
