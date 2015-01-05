@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<layout>
+    <bbguest_index_index>
+        <reference name="content">
+            <block type="core/template" template="bb_guest/index.phtml" />
+        </reference>
+    </bbguest_index_index>
+</layout>

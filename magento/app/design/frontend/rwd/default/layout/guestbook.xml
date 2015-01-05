@@ -1,0 +1,16 @@
+<layout>
+    <default>
+        <reference name="top.links">
+            <action method="addLink" translate="label title before_text" module="guestbook">
+                <label>Guestbook</label>
+                <url helper="guestbook/getGuestbookUrl"/>
+                <title>Guestbook</title>
+                <prepare/>
+                <urlParams/>
+                <position>110</position>
+                <li/>
+                <a/>
+            </action>
+        </reference>
+    </default>
+</layout>

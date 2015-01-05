@@ -1,0 +1,3 @@
+2014-12-30T22:08:35+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 12: parser error : Opening and ending tag mismatch: guestbook line 10 and customer  in D:\magento1910.local\magento\lib\Varien\Simplexml\Config.php on line 510
+2014-12-30T22:08:35+00:00 ERR (3): Warning: simplexml_load_string():                 &lt;/customer&gt;  in D:\magento1910.local\magento\lib\Varien\Simplexml\Config.php on line 510
+2014-12-30T22:08:35+00:00 ERR (3): Warning: simplexml_load_string():                            ^  in D:\magento1910.local\magento\lib\Varien\Simplexml\Config.php on line 510

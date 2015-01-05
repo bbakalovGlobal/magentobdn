@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <New_Guestbook>
+            <active>true</active>
+            <codePool>local</codePool>
+        </New_Guestbook>
+    </modules>
+</config>

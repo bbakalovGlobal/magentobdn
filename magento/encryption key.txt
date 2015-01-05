@@ -1,0 +1,7 @@
+Get ready to experience Open-Source eCommerce Evolved.
+
+Before you continue to your store, please make a note of your encryption key (Magento uses it to encrypt passwords, credit cards and more).
+
+1836c615e3c7c6ab9b588be283f08a5f
+
+(Make sure you keep it in a safe place.)

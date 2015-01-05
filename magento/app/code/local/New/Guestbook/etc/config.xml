@@ -1,0 +1,42 @@
+<config>
+    <modules>
+        <New_Guestbook>
+            <version>0.1.0</version>
+        </New_Guestbook>
+    </modules>
+    <global>
+        <helpers>
+            <guestbook>
+                <class>New_Guestbook_Helper</class>
+            </guestbook>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <guestbook module="New_Guestbook">
+                    <file>guestbook.xml</file>
+                </guestbook>
+            </updates>
+        </layout>
+        <routers>
+            <guestbook>
+                <use>standard</use>
+                <args>
+                    <module>New_Guestbook</module>
+                    <frontName>guestbook</frontName>
+                </args>
+            </guestbook>
+        </routers>
+    </frontend>
+    <!--<helpers>-->
+    <!--<New_Guestbook>-->
+    <!--<class>New_Guestbook_Helper</class>-->
+    <!--</New_Guestbook>-->
+    <!--<customer>-->
+    <!--<rewrite>-->
+    <!--<data>New_Guestbook_Helper_Data</data>-->
+    <!--</rewrite>-->
+    <!--</customer>-->
+    <!--</helpers>-->
+</config>
