@@ -5,3 +5,4 @@ magento/var/*
 .idea/workspace.xml
 magento/var/cache/mage--d/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_log_url_info_1
 magento/var/cache
+.idea/*
