@@ -80,6 +80,12 @@
                 </setup>
             </weblog_setup>
             <!--до сих 6 урок-->
+            <guestbook_setup>
+                <setup>
+                    <module>New_Guestbook</module>
+                    <class>New_Guestbook_Model_Resource_Setup</class>
+                </setup>
+            </guestbook_setup>
         </resources>
         <resource>
             <connection>
@@ -114,6 +120,18 @@
                 </entities>
             </weblog_resource>
             <!--до сих 5 урок-->
+            <guestbook>
+                <class>New_Guestbook_Model</class>
+                <resourceModel>guestbook_resource</resourceModel>
+            </guestbook>
+            <guestbook_resource>
+                <class>New_Guestbook_Model_Resource</class>
+                <entities>
+                    <guestbookposts>
+                        <table>guestbook_posts</table>
+                    </guestbookposts>
+                </entities>
+            </guestbook_resource>
             <core_resource>
                 <class>Mage_Core_Model_Resource</class>
                 <deprecatedNode>core_mysql4</deprecatedNode>

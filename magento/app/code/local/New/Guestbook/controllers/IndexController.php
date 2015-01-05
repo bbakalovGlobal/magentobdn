@@ -11,8 +11,8 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
         /*$helper = Mage::helper('customer/data');
         var_dump($helper);*/
 
-        /*$this->loadLayout(); //загрузка обьектов для отображения
-        $this->renderLayout(); //отображение этих обьектов*/
+        $this->loadLayout(); //загрузка обьектов для отображения
+        $this->renderLayout(); //отображение этих обьектов
     }
 
     public function testAction() {

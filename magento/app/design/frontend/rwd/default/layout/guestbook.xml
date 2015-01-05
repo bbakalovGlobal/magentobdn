@@ -13,4 +13,8 @@
             </action>
         </reference>
     </default>
+    <guestbook_index_index>
+        <block type="page/html" name="root" output="toHtml" template="new/guestbook/guestbook_page.phtml">
+        </block>
+    </guestbook_index_index>
 </layout>
