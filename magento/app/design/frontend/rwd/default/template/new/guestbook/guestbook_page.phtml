@@ -26,3 +26,12 @@
 <div class="page-title" xmlns="http://www.w3.org/1999/html">
     <a href="index/showallposts"><h2><?php echo $this->__('Отзывы наших гостей:') ?></h2></a>
 </div>
+<div>
+    <?php   $posts = Mage::getModel('guestbook/guestbookposts')->getCollection();
+            $posts->setOrder('post_id', 'DESC');
+    foreach ($posts as $guestpost) {
+        echo 'Name: ' . $guestpost->getName() . '<br>';
+        echo 'Post: ' . nl2br($guestpost->getPost()) . '<hr>';
+    }
+    ?>
+</div>

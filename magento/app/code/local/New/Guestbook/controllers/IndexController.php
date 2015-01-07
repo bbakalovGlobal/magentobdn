@@ -49,7 +49,7 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
         $guestpost->setPost($_POST['comment']);
         $guestpost->setTimestamp($today);
         $guestpost->save();
-        $this->_redirect("guestbook/index/showAllPosts");
+        $this->_redirect("guestbook/");
     }
     public function deletePostAction() {
         $guestpost = Mage::getModel('guestbook/guestbookposts');
