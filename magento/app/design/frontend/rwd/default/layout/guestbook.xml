@@ -23,7 +23,7 @@
     </guestbook_index_index>
     <guestbook_index_showallposts>
         <reference name="content">
-        <block type="page/html" template="new/guestbook/showall_page.phtml" />
+        <block type="guestbook/posts" template="new/guestbook/showall_page.phtml" />
         </reference>
     </guestbook_index_showallposts>
 </layout>
