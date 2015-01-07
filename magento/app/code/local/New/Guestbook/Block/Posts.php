@@ -1,5 +1,5 @@
 <?php
-class New_Guestbook_Block_News extends Mage_Core_Block_Template
+class New_Guestbook_Block_Posts extends Mage_Core_Block_Template
 {
 
     public function getPostsCollection()
