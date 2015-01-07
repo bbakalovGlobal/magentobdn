@@ -24,6 +24,7 @@
     </guestbook_index_index>
     <guestbook_index_showAllPosts>
         <block type="page/html" template="new/guestbook/showall_page.phtml">
+            
         </block>
     </guestbook_index_showAllPosts>
 </layout>
