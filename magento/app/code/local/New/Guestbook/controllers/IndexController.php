@@ -29,20 +29,27 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
 //    }
 
     public function showAllPostsAction() {
-        $posts = Mage::getModel('guestbook/guestbookposts')->getCollection();
-        foreach($posts as $guestpost){
-            echo 'Id:'.$guestpost->getId() .'<br>';
-            echo 'Name: ' . $guestpost->getName() . '<br>';
-            echo 'Post: ' .nl2br($guestpost->getPost()) . '<hr>';
-        }
+//        echo 111;
+//        $post = Mage::getModel('guestbook/guestbookposts');
+//        echo 'post with ID ' . $post->getId() . ' created';
+        $this->loadLayout();
+//        $posts = Mage::getModel('guestbook/guestbookposts')->getCollection();
+//        foreach($posts as $guestpost){
+//            echo 'Id:'.$guestpost->getId() .'<br>';
+//            echo 'Name: ' . $guestpost->getName() . '<br>';
+//            echo 'Post: ' .nl2br($guestpost->getPost()) . '<hr>';
+//        }
+        $this->renderLayout();
     }
 
     public function createNewPostAction() {
+        $today = date("Y-m-d H:i:s");
         $guestpost = Mage::getModel('guestbook/guestbookposts');
-        $guestpost->setTitle('Code Post!');
-        $guestpost->setPost('This post was created from code!');
+        $guestpost->setName($_POST['name']);
+        $guestpost->setPost($_POST['comment']);
+        $guestpost->setTimestamp($today);
         $guestpost->save();
-        echo 'post with ID ' . $guestpost->getId() . ' created';
+        $this->_redirect("guestbook/index/showAllPosts");
     }
     public function deletePostAction() {
         $guestpost = Mage::getModel('guestbook/guestbookposts');

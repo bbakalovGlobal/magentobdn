@@ -12,9 +12,19 @@
                 <a/>
             </action>
         </reference>
+        <!--<block type="page/html" name="root" output="toHtml" template="new/guestbook/guestbook_page.phtml">-->
+        <!--</block>-->
     </default>
     <guestbook_index_index>
-        <block type="page/html" name="root" output="toHtml" template="new/guestbook/guestbook_page.phtml">
-        </block>
+        <reference name="content">
+            <block type="page/html" template="new/guestbook/guestbook_page.phtml">
+                <!--name="root" output="toHtml"-->
+            </block>
+        </reference>
     </guestbook_index_index>
+    <guestbook_index_showAllPosts>
+        <reference name="content">
+        <update handle="guestbook_index_index" />
+        </reference>
+    </guestbook_index_showAllPosts>
 </layout>

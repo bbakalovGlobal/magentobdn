@@ -10,6 +10,11 @@
                 <class>New_Guestbook_Helper</class>
             </guestbook>
         </helpers>
+        <blocks>
+            <dsnews>
+                <class>New_Guestbook_Block</class>
+            </dsnews>
+        </blocks>
     </global>
     <frontend>
         <layout>
