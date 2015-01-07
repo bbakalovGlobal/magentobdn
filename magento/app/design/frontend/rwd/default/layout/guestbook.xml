@@ -17,7 +17,7 @@
     </default>
     <guestbook_index_index>
         <reference name="content">
-            <block type="page/html" template="new/guestbook/guestbook_page.phtml" />
+            <block type="guestbook/posts" template="new/guestbook/guestbook_page.phtml" />
                 <!--name="root" output="toHtml"-->
         </reference>
     </guestbook_index_index>

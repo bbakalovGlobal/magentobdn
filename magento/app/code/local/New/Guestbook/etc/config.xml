@@ -34,14 +34,4 @@
             </guestbook>
         </routers>
     </frontend>
-    <!--<helpers>-->
-    <!--<New_Guestbook>-->
-    <!--<class>New_Guestbook_Helper</class>-->
-    <!--</New_Guestbook>-->
-    <!--<customer>-->
-    <!--<rewrite>-->
-    <!--<data>New_Guestbook_Helper_Data</data>-->
-    <!--</rewrite>-->
-    <!--</customer>-->
-    <!--</helpers>-->
 </config>

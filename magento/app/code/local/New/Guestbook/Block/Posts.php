@@ -8,9 +8,4 @@ class New_Guestbook_Block_Posts extends Mage_Core_Block_Template
         $posts->setOrder('post_id', 'DESC');
         return $posts;
     }
-    public function _toHtml()
-    {
-//        return '<h1>BLABLABLA</h1>';
-    }
-
 }
