@@ -11,9 +11,9 @@
             </guestbook>
         </helpers>
         <blocks>
-            <dsnews>
+            <guestbook>
                 <class>New_Guestbook_Block</class>
-            </dsnews>
+            </guestbook>
         </blocks>
     </global>
     <frontend>
