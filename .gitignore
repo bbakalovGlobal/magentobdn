@@ -6,3 +6,7 @@ magento/var/*
 magento/var/cache/mage--d/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_log_url_info_1
 magento/var/cache
 .idea/*
+magento/var/cache/mage--d/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_log_url_info_1
+magento/var/cache/mage--9/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_log_url_1
+magento/var/cache/mage--6/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_catalog_product_entity_1
+magento/var/cache/mage--1/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_log_visitor_info_1
