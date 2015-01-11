@@ -18,7 +18,6 @@ class DS_News_Adminhtml_NewsController extends Mage_Adminhtml_Controller_Action
     {
         $id = (int) $this->getRequest()->getParam('id');
         Mage::register('current_news', Mage::getModel('dsnews/news')->load($id));
-
         $this->loadLayout()->_setActiveMenu('dsnews');
         $this->_addContent($this->getLayout()->createBlock('dsnews/adminhtml_news_edit'));
         $this->renderLayout();
