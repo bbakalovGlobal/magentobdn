@@ -11,3 +11,7 @@ media/*
 .idea/*
 robots.txt
 sitemap.xml
+.idea/workspace.xml
+magento/var/*
+magento/var/*
+magento/.idea/*

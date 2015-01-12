@@ -1,7 +1,7 @@
 <div class="page-title" xmlns="http://www.w3.org/1999/html">
     <h2><?php echo $this->__('Оставте свой отзыв!') ?></h2>
 </div>
-
+<div id="comments"></div>
 <div>
     <form action="index/createNewPost/" method="post" enctype="multipart/form-data">
         <div>
@@ -17,18 +17,19 @@
 
             <div class="col-2 registered-users">
                 <button type="submit" class="button" title="<?php echo $this->__('Отправить') ?>" name="send"
-                        id="send2">
+                        id="send">
                     <span><span><?php echo $this->__('Отправить') ?></span></span></button>
             </div>
+
         </div>
     </form>
 </div>
-<div class="page-title" xmlns="http://www.w3.org/1999/html">
-    <a href="index/showallposts"><h2><?php echo $this->__('Отзывы наших гостей:') ?></h2></a>
-</div>
-<div><?php $posts = $this->getPostsCollection();?>
-    <?php foreach ($posts as $guestpost) : ?>
-        Name: <?php echo $guestpost->getName(); ?> <br>
-        Post: <?php echo nl2br($guestpost->getPost()); ?> <hr>
-    <?php endforeach; ?>
-</div>
+<button id="send2"><?php echo $this->__('Проверка') ?></button>
+<script type="text/javascript">
+        $(function () {
+            alert('OK')
+            jQuery('#send2').click(function () {
+                alert('Hello')
+            });
+        });
+</script>
