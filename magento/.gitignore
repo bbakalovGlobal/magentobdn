@@ -1,8 +1,6 @@
-nbproject/*
 tmp/*
 var/*
 app/etc/local.xml
-media/*
 .htaccess
 .htpasswd
 .settings
