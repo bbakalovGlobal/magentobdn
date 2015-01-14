@@ -5,18 +5,6 @@
         </New_Guestbook>
     </modules>
     <global>
-        <crontab>
-            <jobs>
-                <guestbook>
-                    <schedule>
-                        <cron_expr>*/2 * * * *</cron_expr>
-                    </schedule>
-                    <run>
-                        <model>guestbook/guestbookposts::run</model>
-                    </run>
-                </guestbook>
-            </jobs>
-        </crontab>
         <helpers>
             <guestbook>
                 <class>New_Guestbook_Helper</class>
@@ -27,12 +15,12 @@
                 <class>New_Guestbook_Block</class>
             </guestbook>
         </blocks>
+        <models>
+            <guestbook>
+                <class>New_Guestbook_Model</class>
+            </guestbook>
+        </models>
     </global>
-    <models>
-        <guestbook>
-            <class>New_Guestbook_Model</class>
-        </guestbook>
-    </models>
     <frontend>
         <layout>
             <updates>
@@ -51,4 +39,16 @@
             </guestbook>
         </routers>
     </frontend>
+    <crontab>
+        <jobs>
+            <guestbook>
+                <schedule>
+                    <cron_expr>*/2 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>guestbook/guestbookposts::run</model>
+                </run>
+            </guestbook>
+        </jobs>
+    </crontab>
 </config>
