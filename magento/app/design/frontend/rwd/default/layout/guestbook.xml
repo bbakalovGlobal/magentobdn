@@ -18,7 +18,6 @@
     <guestbook_index_index>
         <reference name="content">
             <block type="guestbook/posts" template="new/guestbook/guestbook_page.phtml" />
-                <!--name="root" output="toHtml"-->
         </reference>
     </guestbook_index_index>
     <guestbook_index_showallposts>

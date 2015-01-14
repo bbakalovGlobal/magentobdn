@@ -16,7 +16,6 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
         $this->renderLayout(); //отображение этих обьектов
     }
 
-
 //    public function testAction()
 //    {
 //        //echo 'Setup!';
@@ -28,7 +27,8 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
 //        var_dump($data);
 //    }
 
-    public function showAllPostsAction() {
+    public function showAllPostsAction()
+    {
 //        echo 111;
 //        $post = Mage::getModel('guestbook/guestbookposts');
 //        echo 'post with ID ' . $post->getId() . ' created';
@@ -56,6 +56,12 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
         $guestpost->load(3); //нужный id записи
         $guestpost->delete();
         echo 'post with ID ' . $guestpost->getId() . ' was removed';
+    }
+    public function ajaxAction()
+    {
+//        $this->loadLayout();
+//        $this->renderLayout();
+        echo "Hello AJAX";
     }
 
 
