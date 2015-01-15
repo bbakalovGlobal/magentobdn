@@ -24,12 +24,13 @@
         </div>
     </form>
 </div>
-<div ="allComments"></div>
-<button type="button" id="try">BLABLABLA</button>
+<div id="allComments"></div>
+<!--<button type="button" id="try">BLABLABLA</button>-->
 <script type="text/javascript">
-    jQuery('#try').click(function () {
+    jQuery('#send').click(function () {
         jQuery.ajax({
             url: 'index/ajax',
+            dataType: "html",
             success: function (data) {
                 jQuery('#allComments').html(data);
             }

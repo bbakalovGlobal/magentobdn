@@ -42,26 +42,33 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
         $this->renderLayout();
     }
 
-    public function createNewPostAction() {
+    public function createNewPostAction()
+    {
         $today = date("Y-m-d H:i:s");
         $guestpost = Mage::getModel('guestbook/guestbookposts');
-        $guestpost->setName($_POST['name']);
-        $guestpost->setPost($_POST['comment']);
-        $guestpost->setTimestamp($today);
-        $guestpost->save();
-        $this->_redirect("guestbook/");
+        if (!empty($_POST['name']) || !empty($_POST['comment'])) {
+            $guestpost->setName($_POST['name']);
+            $guestpost->setPost($_POST['comment']);
+            $guestpost->setTimestamp($today);
+            $guestpost->save();
+            //$this->_redirect("guestbook/");
+        }else{
+            Mage::getSingleton('customer/session')->addError($e->getMessage("dfdfdf"));
+        }
     }
-    public function deletePostAction() {
-        $guestpost = Mage::getModel('guestbook/guestbookposts');
-        $guestpost->load(3); //нужный id записи
-        $guestpost->delete();
-        echo 'post with ID ' . $guestpost->getId() . ' was removed';
+
+    public function deletePostAction()
+    {
+//        $guestpost = Mage::getModel('guestbook/guestbookposts');
+//        $guestpost->load(3); //нужный id записи
+//        $guestpost->delete();
+//        echo 'post with ID ' . $guestpost->getId() . ' was removed';
     }
+
     public function ajaxAction()
     {
-//        $this->loadLayout();
-//        $this->renderLayout();
-        echo "Hello AJAX";
+        $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
+        die($action);
     }
 
 
