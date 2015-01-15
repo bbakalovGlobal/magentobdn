@@ -51,9 +51,11 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
             $guestpost->setPost($_POST['comment']);
             $guestpost->setTimestamp($today);
             $guestpost->save();
+            $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
+            die($action);
             //$this->_redirect("guestbook/");
-        }else{
-            Mage::getSingleton('customer/session')->addError($e->getMessage("dfdfdf"));
+        } else {
+//            Mage::getSingleton('customer/session')->addError($e->getMessage("dfdfdf"));
         }
     }
 

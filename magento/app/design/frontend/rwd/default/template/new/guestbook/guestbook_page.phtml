@@ -1,9 +1,9 @@
+<div id="allComments"></div>
 <div class="page-title" xmlns="http://www.w3.org/1999/html">
     <h2><?php echo $this->__('Оставте свой отзыв!') ?></h2>
 </div>
-<div id="comments"></div>
 <div>
-    <form action="index/createNewPost/" method="post" enctype="multipart/form-data">
+    <form action="javascript:send();" method="post" enctype="multipart/form-data">
         <div>
             <label for="name"><em></em><?php echo $this->__('Имя') ?></label>
 
@@ -12,7 +12,8 @@
                        class="input-text required-entry validate-email" title="<?php echo $this->__('Имя') ?>" "/>
             </div>
             <div class="input-box">
-                <textarea placeholder="Отзыв" name="comment" " title="<?php echo $this->__('Отзыв') ?>"/ ></textarea>
+                <textarea placeholder="Отзыв" name="comment" id="comment" " title="<?php echo $this->__('Отзыв') ?>"/
+                ></textarea>
             </div>
 
             <div class="col-2 registered-users">
@@ -24,41 +25,35 @@
         </div>
     </form>
 </div>
-<div id="allComments"></div>
-<!--<button type="button" id="try">BLABLABLA</button>-->
 <script type="text/javascript">
-    jQuery('#send').click(function () {
-        jQuery.ajax({
-            url: 'index/ajax',
-            dataType: "html",
-            success: function (data) {
-                jQuery('#allComments').html(data);
+    function send() {
+        jQuery('#send').click(function () {
+                var name = jQuery("#name");
+                var comment = jQuery("#comment");
+                jQuery.ajax({
+                    type: "POST",
+                    url: 'index/createNewPost',
+                    data: "name=" + name + "&comment=" + comment,
+                    success: function (data) {
+                        jQuery('#allComments').html(data);
+                        jQuery("#name").val('')
+                        jQuery("#comment").val('')
+                    }
+                });
             }
-        });
-    });
+        )
+        ;
+    }
 </script>
+<!--<button type="button" id="try">BLABLABLA</button>-->
 <!--<script type="text/javascript">-->
-<!--    function loadXMLDoc()-->
-<!--    {-->
-<!--        var xmlhttp;-->
-<!--        if (window.XMLHttpRequest)-->
-<!--        {// code for IE7+, Firefox, Chrome, Opera, Safari-->
-<!--            xmlhttp=new XMLHttpRequest();-->
-<!--        }-->
-<!---->
-<!--        xmlhttp.onreadystatechange=function()-->
-<!--        {-->
-<!--            if (xmlhttp.readyState==4 && xmlhttp.status==200)-->
-<!--            {-->
-<!--                document.getElementById("myDiv").innerHTML=xmlhttp.responseText;-->
+<!--    jQuery('#send').click(function () {-->
+<!--        jQuery.ajax({-->
+<!--            url: 'index/ajax',-->
+<!--            dataType: "html",-->
+<!--            success: function (data) {-->
+<!--                jQuery('#allComments').html(data);-->
 <!--            }-->
-<!--        }-->
-<!--        xmlhttp.open("GET","index/ajax",true);-->
-<!--        xmlhttp.send();-->
-<!--    }-->
+<!--        });-->
+<!--    });-->
 <!--</script>-->
-<!--<button type="button" onclick="loadXMLDoc()">Change Content</button>-->
-<!--<div id="myDiv"></div>-->
-<!--<div id="myDiv"><h2>Let AJAX change this text</h2></div>-->
-<!--<button type="button" onclick="loadXMLDoc()">Change Content</button>-->
-<!--<script>-->
