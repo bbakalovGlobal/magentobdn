@@ -24,6 +24,18 @@
         </div>
     </form>
 </div>
+<div ="allComments"></div>
+<button type="button" id="try">BLABLABLA</button>
+<script type="text/javascript">
+    jQuery('#try').click(function () {
+        jQuery.ajax({
+            url: 'index/ajax',
+            success: function (data) {
+                jQuery('#allComments').html(data);
+            }
+        });
+    });
+</script>
 <!--<script type="text/javascript">-->
 <!--    function loadXMLDoc()-->
 <!--    {-->
@@ -44,42 +56,8 @@
 <!--        xmlhttp.send();-->
 <!--    }-->
 <!--</script>-->
-<!---->
+<!--<button type="button" onclick="loadXMLDoc()">Change Content</button>-->
+<!--<div id="myDiv"></div>-->
 <!--<div id="myDiv"><h2>Let AJAX change this text</h2></div>-->
 <!--<button type="button" onclick="loadXMLDoc()">Change Content</button>-->
 <!--<script>-->
-<!--function showCustomer(str)-->
-<!--{-->
-<!--var xmlhttp;-->
-<!--if (str=="")-->
-<!--{-->
-<!--document.getElementById("txtHint").innerHTML="";-->
-<!--return;-->
-<!--}-->
-<!--if (window.XMLHttpRequest)-->
-<!--{// code for IE7+, Firefox, Chrome, Opera, Safari-->
-<!--xmlhttp=new XMLHttpRequest();-->
-<!--}-->
-<!---->
-<!--if (xmlhttp.readyState==4 && xmlhttp.status==200)-->
-<!--{-->
-<!--document.getElementById("txtHint").innerHTML=xmlhttp.responseText;-->
-<!--}-->
-<!--}-->
-<!--xmlhttp.open("GET","getcustomer.asp?q="+str,true);-->
-<!--xmlhttp.send();-->
-<!--}-->
-<!--</script>-->
-<!--</head>-->
-<!--<body>-->
-<!---->
-<!--<form action="">-->
-<!--<select name="customers" onchange="showCustomer(this.value)">-->
-<!--<option value="">Select a customer:</option>-->
-<!--<option value="ALFKI">Alfreds Futterkiste</option>-->
-<!--<option value="NORTS ">North/South</option>-->
-<!--<option value="WOLZA">Wolski Zajazd</option>-->
-<!--</select>-->
-<!--</form>-->
-<!--<br>-->
-<!--<div id="txtHint">Customer info will be listed here...</div>-->
