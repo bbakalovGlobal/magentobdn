@@ -16,6 +16,36 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
         $this->renderLayout(); //отображение этих обьектов
     }
 
+    public function createNewPostAction()
+    {
+        $today = date("Y-m-d H:i:s");
+        $guestpost = Mage::getModel('guestbook/guestbookposts');
+        $data = $this->getRequest()->getPost();
+        if (!empty($data['name']) || !empty($data['comment'])) {
+            $guestpost->setName($data['name']);
+            $guestpost->setPost($data['comment']);
+            $guestpost->setTimestamp($today);
+            $guestpost->save();
+            //$message = "BLABLABLA";
+            $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
+            die($action);
+            /**
+             * Хотел сделать, если не произошло сохранение в БД, то добавлять сообщение и отправлять на AJAX.
+             * if (!$save) {
+             * $message = "Необходимо заполнить все поля!";
+             * }
+             * $result = array('message' => $message, 'content' => $action);
+             * die(json_encode($result));
+             */
+        }
+    }
+
+    public function ajaxAction()
+    {
+        $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
+        die($action);
+    }
+
 //    public function testAction()
 //    {
 //        //echo 'Setup!';
@@ -32,7 +62,7 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
 //        echo 111;
 //        $post = Mage::getModel('guestbook/guestbookposts');
 //        echo 'post with ID ' . $post->getId() . ' created';
-        $this->loadLayout();
+//        $this->loadLayout();
 //        $posts = Mage::getModel('guestbook/guestbookposts')->getCollection();
 //        foreach($posts as $guestpost){
 //            echo 'Id:'.$guestpost->getId() .'<br>';
@@ -42,23 +72,6 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
         $this->renderLayout();
     }
 
-    public function createNewPostAction()
-    {
-        $today = date("Y-m-d H:i:s");
-        $guestpost = Mage::getModel('guestbook/guestbookposts');
-        if (!empty($_POST['name']) || !empty($_POST['comment'])) {
-            $guestpost->setName($_POST['name']);
-            $guestpost->setPost($_POST['comment']);
-            $guestpost->setTimestamp($today);
-            $guestpost->save();
-            $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
-            die($action);
-            //$this->_redirect("guestbook/");
-        } else {
-//            Mage::getSingleton('customer/session')->addError($e->getMessage("dfdfdf"));
-        }
-    }
-
     public function deletePostAction()
     {
 //        $guestpost = Mage::getModel('guestbook/guestbookposts');
@@ -66,12 +79,4 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
 //        $guestpost->delete();
 //        echo 'post with ID ' . $guestpost->getId() . ' was removed';
     }
-
-    public function ajaxAction()
-    {
-        $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
-        die($action);
-    }
-
-
 }

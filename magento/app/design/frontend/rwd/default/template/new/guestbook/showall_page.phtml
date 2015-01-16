@@ -4,8 +4,9 @@
 <div>
     <?php $posts = $this->getPostsCollection(); ?>
     <?php foreach ($posts as $guestpost) : ?>
-    Name: <?php echo $guestpost->getName(); ?> <br>
-    Post: <?php echo nl2br($guestpost->getPost()); ?> <hr>
+        Имя: <?php echo $guestpost->getName(); ?> <br>
+        <?php echo nl2br($guestpost->getPost()); ?>
+        <hr>
     <?php endforeach; ?>
 </div>
 
