@@ -1,32 +1,32 @@
 <div id="allComments"></div>
 <div class="page-title" xmlns="http://www.w3.org/1999/html">
-    <h2><?php echo $this->__('Оставте свой отзыв!') ?></h2>
+    <h2><?php echo $this->__('Leave your comment!') ?></h2>
 </div>
 <div>
     <form id="sendForm" method="post" enctype="multipart/form-data">
         <div>
-            <label for="name"><em></em><?php echo $this->__('Имя') ?></label>
+            <label for="name"><em></em><?php echo $this->__('Name') ?></label>
+
             <div class="input-box">
                 <input type="text" name="name" value="<?php echo $this->escapeHtml($this->getUsername()) ?>" id="name"
-                       class="input-text required-entry validate-email" title="<?php echo $this->__('Имя') ?>" />
+                       class="input-text required-entry validate-email" title="<?php echo $this->__('Name') ?>"/>
             </div>
             <div class="input-box">
-                <textarea placeholder="Отзыв" name="comment" id="comment" " title="<?php echo $this->__('Отзыв') ?>"/
+                <textarea placeholder="Comment" name="comment" id="comment" " title="<?php echo $this->__('Comment') ?>"/
                 ></textarea>
             </div>
-            <ul class="errorMessage" style="display: none; color: red;">
-                <li class="error-msg">
-                    <ul>
-                        <li>
-                            <span id="error"></span>
-                        </li>
-                    </ul>
+            <ul class="message">
+                <li class="error-msg" style="display: none; color: red;">
+                    <span id="error"></span>
+                </li>
+                <li class="success-msg" style="display: none; color: green;">
+                    <span id="success"></span>
                 </li>
             </ul>
             <div class="col-2 registered-users">
-                <button type="button" class="button" title="<?php echo $this->__('Отправить') ?>" name="send"
+                <button type="button" class="button" title="<?php echo $this->__('Send') ?>" name="send"
                         id="send">
-                    <span><span><?php echo $this->__('Отправить') ?></span></span></button>
+                    <span><span><?php echo $this->__('Send') ?></span></span></button>
             </div>
 
         </div>
@@ -39,40 +39,41 @@
         if (fieldValidator(name, comment)) {
             ajaxSend(name, comment);
         } else {
-            var message = "Необходимо заполнить все поля!";
-            jQuery(".errorMessage").show();
+            var message = "All fields are required!";
+            jQuery('.success-msg').hide();
+            jQuery(".error-msg").show();
             jQuery('#error').html(message);
         }
     });
 
-    function fieldValidator(name, comment)
-    {
+    function fieldValidator(name, comment) {
         if (typeof name == 'undefined' || name == '') {
             return false;
-        } else if (typeof comment == 'undefined' || name == '') {
+        } else if (typeof comment == 'undefined' || comment == '') {
             return false;
         }
-
         return true;
     }
 
-    function ajaxSend(name, comment)
-    {
+    function ajaxSend(name, comment) {
         jQuery.ajax({
             type: "POST",
             url: 'index/createNewPost',
             dataType: "json",
             data: jQuery("#sendForm").serialize(),
             success: function (data) {
-                jQuery(".errorMessage").show();
-                jQuery('#error').html(data.message);
+//                jQuery(".errorMessage").show();
+                jQuery('.error-msg').hide();
+                jQuery(".success-msg").show();
+                jQuery('#success').html(data.message);
                 jQuery('#allComments').html(data.content);
                 jQuery("#name").val('');
                 jQuery("#comment").val('');
             },
-            error: function(){
+            error: function () {
                 var message = "Service unavailable";
-                jQuery(".errorMessage").show();
+                jQuery('.success-msg').hide();
+                jQuery(".error-msg").show();
                 jQuery('#error').html(message);
             }
         });

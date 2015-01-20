@@ -2,7 +2,6 @@
 
 class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
 {
-
     public function indexAction()
     {
 //        $test = Mage::helper('guestbook')->getGuestbookUrl();
@@ -16,6 +15,10 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
         $this->renderLayout(); //отображение этих обьектов
     }
 
+    /**
+     *
+     *  @return array with message and content
+     */
     public function createNewPostAction()
     {
         $today = date("Y-m-d H:i:s");
@@ -45,12 +48,6 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
             die(json_encode($result));
         }
     }
-
-//    public function ajaxAction()
-//    {
-//        $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
-//        die($action);
-//    }
 
 //    public function testAction()
 //    {

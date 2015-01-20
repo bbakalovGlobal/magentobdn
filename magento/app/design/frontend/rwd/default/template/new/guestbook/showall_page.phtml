@@ -1,10 +1,10 @@
 <div class="page-title" xmlns="http://www.w3.org/1999/html">
-    <h2><?php echo $this->__('Отзывы наших гостей:') ?></h2>
+    <h2><?php echo $this->__('Comments from our guests:') ?></h2>
 </div>
 <div>
     <?php $posts = $this->getPostsCollection(); ?>
     <?php foreach ($posts as $guestpost) : ?>
-        Имя: <?php echo $guestpost->getName(); ?> <br>
+        Name: <?php echo $guestpost->getName(); ?> <br>
         <?php echo nl2br($guestpost->getPost()); ?>
         <hr>
     <?php endforeach; ?>
