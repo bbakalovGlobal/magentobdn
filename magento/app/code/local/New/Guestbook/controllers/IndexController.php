@@ -37,6 +37,9 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
              * $result = array('message' => $message, 'content' => $action);
              * die(json_encode($result));
              */
+            //test
+            //test
+            //test
         }
     }
 
