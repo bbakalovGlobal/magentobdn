@@ -24,5 +24,5 @@ class DS_News_IndexController extends Mage_Core_Controller_Front_Action
             $this->_forward('noRoute');
         }
     }
-
+//test
 }
