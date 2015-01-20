@@ -3,7 +3,7 @@
     <h2><?php echo $this->__('Оставте свой отзыв!') ?></h2>
 </div>
 <div>
-    <form action="javascript:send();" method="post" enctype="multipart/form-data">
+    <form id="sendForm" method="post" enctype="multipart/form-data">
         <div>
             <label for="name"><em></em><?php echo $this->__('Имя') ?></label>
             <div class="input-box">
@@ -24,7 +24,7 @@
                 </li>
             </ul>
             <div class="col-2 registered-users">
-                <button type="submit" class="button" title="<?php echo $this->__('Отправить') ?>" name="send"
+                <button type="button" class="button" title="<?php echo $this->__('Отправить') ?>" name="send"
                         id="send">
                     <span><span><?php echo $this->__('Отправить') ?></span></span></button>
             </div>
@@ -33,57 +33,48 @@
     </form>
 </div>
 <script type="text/javascript">
-    function send() {
-        jQuery('#send').click(function () {
-            var name = jQuery("#name").val();
-            var comment = jQuery("#comment").val();
-//                Сейчас постоянно заходит в error: function(). При добавлении в БД response получает колекцию.
-            jQuery.ajax({
-                type: "POST",
-                url: 'index/createNewPost',
-                dataType: "json",
-                data: "name=" + name + "&comment=" + comment,
-                success: function (data) {
-                    alert("SUCCESS");
-                    jQuery('#allComments').html(data.content);
-                    jQuery("#name").val('');
-                    jQuery("#comment").val('');
-                },
-                error: function(){
-                    var message = "Необходимо заполнить все поля!";
-                    jQuery(".errorMessage").show();
-                    jQuery('#error').html(message);
-                }
-        });
+    jQuery('#send').click(function () {
+        var name = jQuery("#name").val();
+        var comment = jQuery("#comment").val();
+        if (fieldValidator(name, comment)) {
+            ajaxSend(name, comment);
+        } else {
+            var message = "Необходимо заполнить все поля!";
+            jQuery(".errorMessage").show();
+            jQuery('#error').html(message);
+        }
     });
+
+    function fieldValidator(name, comment)
+    {
+        if (typeof name == 'undefined' || name == '') {
+            return false;
+        } else if (typeof comment == 'undefined' || name == '') {
+            return false;
+        }
+
+        return true;
+    }
+
+    function ajaxSend(name, comment)
+    {
+        jQuery.ajax({
+            type: "POST",
+            url: 'index/createNewPost',
+            dataType: "json",
+            data: jQuery("#sendForm").serialize(),
+            success: function (data) {
+                jQuery(".errorMessage").show();
+                jQuery('#error').html(data.message);
+                jQuery('#allComments').html(data.content);
+                jQuery("#name").val('');
+                jQuery("#comment").val('');
+            },
+            error: function(){
+                var message = "Service unavailable";
+                jQuery(".errorMessage").show();
+                jQuery('#error').html(message);
+            }
+        });
     }
 </script>
-<!--Скрипт добавляет без валидации на пустые поля-->
-<!--$.ajax({-->
-<!--type: "POST",-->
-<!--url: "some.php",-->
-<!--data: { name: "John", location: "Boston" }-->
-<!--})-->
-<!--.done(function( msg ) {-->
-<!--alert( "Data Saved: " + msg );-->
-<!--}) .fail(function ( msg ) { alert("Error" + msg);});-->
-<!--<script type="text/javascript">-->
-<!--    function send() {-->
-<!--        jQuery('#send').click(function () {-->
-<!--                var name = jQuery("#name").val();-->
-<!--                var comment = jQuery("#comment").val();-->
-<!--                jQuery.ajax({-->
-<!--                    type: "POST",-->
-<!--                    url: 'index/createNewPost',-->
-<!--                    data: "name=" + name + "&comment=" + comment,-->
-<!--                    success: function (data) {-->
-<!--                        jQuery('#allComments').html(data);-->
-<!--                        jQuery("#name").val('');-->
-<!--                        jQuery("#comment").val('');-->
-<!--                    }-->
-<!--                });-->
-<!--            }-->
-<!--        )-->
-<!--        ;-->
-<!--    }-->
-<!--</script>-->

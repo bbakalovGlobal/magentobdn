@@ -19,24 +19,38 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
     public function createNewPostAction()
     {
         $today = date("Y-m-d H:i:s");
+        $error = '';
+        $result = array();
         $guestpost = Mage::getModel('guestbook/guestbookposts');
         $data = $this->getRequest()->getPost();
         if (!empty($data['name']) || !empty($data['comment'])) {
             $guestpost->setName($data['name']);
             $guestpost->setPost($data['comment']);
             $guestpost->setTimestamp($today);
-            $guestpost->save();
+            try {
+                $guestpost->save();
+            } catch(Exception $e) {
+                $error = $e->getMessage();
+            }
 
-            $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
-            die($action);
+            $content = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
+
+            if ($error == '') {
+                $message = 'Saved successfully';
+                $result = array('message' => $message, 'content' => $content);
+            } else {
+                $result = array('message' => $error, 'content' => $content);
+            }
+
+            die(json_encode($result));
         }
     }
 
-    public function ajaxAction()
-    {
-        $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
-        die($action);
-    }
+//    public function ajaxAction()
+//    {
+//        $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
+//        die($action);
+//    }
 
 //    public function testAction()
 //    {
