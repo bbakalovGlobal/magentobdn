@@ -26,20 +26,9 @@ class New_Guestbook_IndexController extends Mage_Core_Controller_Front_Action
             $guestpost->setPost($data['comment']);
             $guestpost->setTimestamp($today);
             $guestpost->save();
-            //$message = "BLABLABLA";
+
             $action = $this->getLayout()->createBlock('guestbook/posts')->setTemplate('new/guestbook/showall_page.phtml')->toHtml();
             die($action);
-            /**
-             * Хотел сделать, если не произошло сохранение в БД, то добавлять сообщение и отправлять на AJAX.
-             * if (!$save) {
-             * $message = "Необходимо заполнить все поля!";
-             * }
-             * $result = array('message' => $message, 'content' => $action);
-             * die(json_encode($result));
-             */
-            //test
-            //test
-            //test
         }
     }
 
