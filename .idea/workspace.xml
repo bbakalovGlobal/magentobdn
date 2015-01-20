@@ -1,7 +1,437 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4393634a-9261-46c5-8aaf-b760396a4247" name="Default" comment="" />
+    <list default="true" id="4393634a-9261-46c5-8aaf-b760396a4247" name="Default" comment="123">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_DB_PDO_MYSQL_DDL_log_visitor_info_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_az_Latn_AZ_country_AZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_bs_Latn_BA_country_BA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_mn_Cyrl_MN_country_MN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_ms_Latn_MY_country_MY" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_ru_RU_currencynumber_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_ru_RU_day_gregorian_format_wide_tue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_ru_RU_month_gregorian_format_wide_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_ru_RU_nametocurrency_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_sr_Latn_RS_country_RS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_zh_Hans_CN_country_CN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_zh_Hans_HK_country_HK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---fcd_Zend_LocaleC_zh_Hant_TW_country_TW" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_log_visitor_info_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_az_Latn_AZ_country_AZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_bs_Latn_BA_country_BA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_mn_Cyrl_MN_country_MN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_ms_Latn_MY_country_MY" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_currencynumber_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_day_gregorian_format_wide_tue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_month_gregorian_format_wide_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_nametocurrency_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_sr_Latn_RS_country_RS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_zh_Hans_CN_country_CN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_zh_Hans_HK_country_HK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--1/mage---internal-metadatas---fcd_Zend_LocaleC_zh_Hant_TW_country_TW" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_az_Latn_AZ_language_az" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_bs_Latn_BA_language_bs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_mn_Cyrl_MN_language_mn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_ms_Latn_MY_language_ms" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_ru_RU_currencysymbol_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_sr_Latn_RS_language_sr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_zh_Hans_CN_language_zh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_zh_Hans_HK_language_zh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---fcd_Zend_LocaleC_zh_Hant_TW_language_zh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_az_Latn_AZ_language_az" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_bs_Latn_BA_language_bs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_mn_Cyrl_MN_language_mn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_ms_Latn_MY_language_ms" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_currencysymbol_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_sr_Latn_RS_language_sr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_zh_Hans_CN_language_zh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_zh_Hans_HK_language_zh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--2/mage---internal-metadatas---fcd_Zend_LocaleC_zh_Hant_TW_language_zh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---fcd_Zend_LocaleC_ru_RU_currencysymbol_RUB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---fcd_Zend_LocaleC_ru_RU_currencysymbol_UAH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---fcd_Zend_LocaleC_ru_RU_currencytoname_UAH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---fcd_Zend_LocaleC_ru_RU_nametocurrency_RUB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---fcd_Zend_LocaleC_ru_RU_nametocurrency_UAH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_currencysymbol_RUB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_currencysymbol_UAH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_currencytoname_UAH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_nametocurrency_RUB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--4/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_nametocurrency_UAH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--5/mage---fcd_CORE_CACHE_OPTIONS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--5/mage---internal-metadatas---fcd_CORE_CACHE_OPTIONS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--6/mage---fcd_DB_PDO_MYSQL_DDL_catalog_product_entity_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--6/mage---fcd_Zend_LocaleC_ru_RU_currencytoregion_RU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--6/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_catalog_product_entity_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--6/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_currencytoregion_RU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--8/mage---fcd_Zend_LocaleC_ru_RU_am_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--8/mage---fcd_Zend_LocaleC_ru_RU_pm_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--8/mage---fcd_Zend_LocaleL_ru_RU_month_gregorian_format_abbreviated" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--8/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_am_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--8/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_pm_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--8/mage---internal-metadatas---fcd_Zend_LocaleL_ru_RU_month_gregorian_format_abbreviated" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---fcd_DB_PDO_MYSQL_DDL_log_url_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---fcd_Zend_LocaleC_ru_RU_date_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---fcd_Zend_LocaleC_ru_RU_time_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---fcd_Zend_LocaleL_en_US_days_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---fcd_Zend_LocaleL_ru_RU_day_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---fcd_Zend_LocaleL_ru_RU_days_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_log_url_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_date_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_time_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---internal-metadatas---fcd_Zend_LocaleL_en_US_days_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---internal-metadatas---fcd_Zend_LocaleL_ru_RU_day_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--9/mage---internal-metadatas---fcd_Zend_LocaleL_ru_RU_days_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--a/mage---fcd_Zend_LocaleL_ru_RU_month_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--a/mage---internal-metadatas---fcd_Zend_LocaleL_ru_RU_month_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--b/mage---fcd_Zend_LocaleL_en_US_months_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--b/mage---fcd_Zend_LocaleL_ru_RU_months_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--b/mage---fcd_Zend_LocaleL_ru_RU_symbols_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--b/mage---internal-metadatas---fcd_Zend_LocaleL_en_US_months_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--b/mage---internal-metadatas---fcd_Zend_LocaleL_ru_RU_months_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--b/mage---internal-metadatas---fcd_Zend_LocaleL_ru_RU_symbols_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--c/mage---fcd_Zend_LocaleC_ru_RU_date_full" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--c/mage---fcd_Zend_LocaleC_ru_RU_date_long" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--c/mage---fcd_Zend_LocaleL_ru_RU_language_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--c/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_date_full" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--c/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_date_long" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--c/mage---internal-metadatas---fcd_Zend_LocaleL_ru_RU_language_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_DB_PDO_MYSQL_DDL_log_url_info_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_af_ZA_country_ZA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ar_DZ_country_DZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ar_EG_country_EG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ar_KW_country_KW" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ar_MA_country_MA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ar_SA_country_SA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_be_BY_country_BY" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_bg_BG_country_BG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_bn_BD_country_BD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ca_ES_country_ES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_cs_CZ_country_CZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_cy_GB_country_GB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_da_DK_country_DK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_de_AT_country_AT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_de_CH_country_CH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_de_DE_country_DE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_el_GR_country_GR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_en_AU_country_AU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_en_CA_country_CA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_en_GB_country_GB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_en_IE_country_IE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_en_NZ_country_NZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_en_US_country_US" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_AR_country_AR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_CL_country_CL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_CO_country_CO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_CR_country_CR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_ES_country_ES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_MX_country_MX" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_PA_country_PA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_PE_country_PE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_es_VE_country_VE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_et_EE_country_EE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_fa_IR_country_IR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_fi_FI_country_FI" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_fr_CA_country_CA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_fr_FR_country_FR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_gl_ES_country_ES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_gu_IN_country_IN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_he_IL_country_IL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_hi_IN_country_IN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_hr_HR_country_HR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_hu_HU_country_HU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_id_ID_country_ID" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_is_IS_country_IS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_it_CH_country_CH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_it_IT_country_IT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ja_JP_country_JP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ka_GE_country_GE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_km_KH_country_KH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ko_KR_country_KR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_lo_LA_country_LA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_lt_LT_country_LT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_lv_LV_country_LV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_mk_MK_country_MK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_nb_NO_country_NO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_nl_NL_country_NL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_nn_NO_country_NO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_pl_PL_country_PL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_pt_BR_country_BR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_pt_PT_country_PT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ro_RO_country_RO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ru_RU_country_RU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ru_RU_field_week" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_ru_RU_relative_0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_sk_SK_country_SK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_sl_SI_country_SI" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_sq_AL_country_AL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_sv_SE_country_SE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_sw_KE_country_KE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_th_TH_country_TH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_tr_TR_country_TR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_uk_UA_country_UA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---fcd_Zend_LocaleC_vi_VN_country_VN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_DB_PDO_MYSQL_DDL_log_url_info_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_af_ZA_country_ZA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ar_DZ_country_DZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ar_EG_country_EG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ar_KW_country_KW" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ar_MA_country_MA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ar_SA_country_SA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_be_BY_country_BY" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_bg_BG_country_BG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_bn_BD_country_BD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ca_ES_country_ES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_cs_CZ_country_CZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_cy_GB_country_GB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_da_DK_country_DK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_de_AT_country_AT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_de_CH_country_CH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_de_DE_country_DE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_el_GR_country_GR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_en_AU_country_AU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_en_CA_country_CA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_en_GB_country_GB" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_en_IE_country_IE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_en_NZ_country_NZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_en_US_country_US" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_AR_country_AR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_CL_country_CL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_CO_country_CO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_CR_country_CR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_ES_country_ES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_MX_country_MX" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_PA_country_PA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_PE_country_PE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_es_VE_country_VE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_et_EE_country_EE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_fa_IR_country_IR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_fi_FI_country_FI" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_fr_CA_country_CA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_fr_FR_country_FR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_gl_ES_country_ES" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_gu_IN_country_IN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_he_IL_country_IL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_hi_IN_country_IN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_hr_HR_country_HR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_hu_HU_country_HU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_id_ID_country_ID" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_is_IS_country_IS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_it_CH_country_CH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_it_IT_country_IT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ja_JP_country_JP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ka_GE_country_GE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_km_KH_country_KH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ko_KR_country_KR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_lo_LA_country_LA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_lt_LT_country_LT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_lv_LV_country_LV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_mk_MK_country_MK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_nb_NO_country_NO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_nl_NL_country_NL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_nn_NO_country_NO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_pl_PL_country_PL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_pt_BR_country_BR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_pt_PT_country_PT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ro_RO_country_RO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_country_RU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_field_week" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_relative_0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_sk_SK_country_SK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_sl_SI_country_SI" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_sq_AL_country_AL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_sv_SE_country_SE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_sw_KE_country_KE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_th_TH_country_TH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_tr_TR_country_TR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_uk_UA_country_UA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--d/mage---internal-metadatas---fcd_Zend_LocaleC_vi_VN_country_VN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_af_ZA_language_af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ar_DZ_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ar_EG_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ar_KW_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ar_MA_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ar_SA_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_be_BY_language_be" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_bg_BG_language_bg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_bn_BD_language_bn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ca_ES_language_ca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_cs_CZ_language_cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_cy_GB_language_cy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_da_DK_language_da" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_de_AT_language_de" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_de_CH_language_de" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_de_DE_language_de" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_el_GR_language_el" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_en_AU_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_en_CA_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_en_GB_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_en_IE_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_en_NZ_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_en_US_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_AR_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_CL_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_CO_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_CR_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_ES_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_MX_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_PA_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_PE_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_es_VE_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_et_EE_language_et" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_fa_IR_language_fa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_fi_FI_language_fi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_fil_PH_country_PH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_fr_CA_language_fr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_fr_FR_language_fr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_gl_ES_language_gl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_gu_IN_language_gu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_he_IL_language_he" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_hi_IN_language_hi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_hr_HR_language_hr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_hu_HU_language_hu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_id_ID_language_id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_is_IS_language_is" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_it_CH_language_it" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_it_IT_language_it" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ja_JP_language_ja" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ka_GE_language_ka" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_km_KH_language_km" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ko_KR_language_ko" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_lo_LA_language_lo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_lt_LT_language_lt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_lv_LV_language_lv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_mk_MK_language_mk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_nb_NO_language_nb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_nl_NL_language_nl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_nn_NO_language_nn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_pl_PL_language_pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_pt_BR_language_pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_pt_PT_language_pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ro_RO_language_ro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ru_RU_date_medium" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_ru_RU_language_ru" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_sk_SK_language_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_sl_SI_language_sl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_sq_AL_language_sq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_sv_SE_language_sv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_sw_KE_language_sw" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_th_TH_language_th" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_tr_TR_language_tr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_uk_UA_language_uk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleC_vi_VN_language_vi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---fcd_Zend_LocaleL_ru_RU_territory_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_af_ZA_language_af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ar_DZ_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ar_EG_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ar_KW_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ar_MA_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ar_SA_language_ar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_be_BY_language_be" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_bg_BG_language_bg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_bn_BD_language_bn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ca_ES_language_ca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_cs_CZ_language_cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_cy_GB_language_cy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_da_DK_language_da" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_de_AT_language_de" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_de_CH_language_de" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_de_DE_language_de" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_el_GR_language_el" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_en_AU_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_en_CA_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_en_GB_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_en_IE_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_en_NZ_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_en_US_language_en" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_AR_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_CL_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_CO_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_CR_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_ES_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_MX_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_PA_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_PE_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_es_VE_language_es" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_et_EE_language_et" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_fa_IR_language_fa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_fi_FI_language_fi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_fil_PH_country_PH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_fr_CA_language_fr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_fr_FR_language_fr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_gl_ES_language_gl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_gu_IN_language_gu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_he_IL_language_he" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_hi_IN_language_hi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_hr_HR_language_hr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_hu_HU_language_hu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_id_ID_language_id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_is_IS_language_is" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_it_CH_language_it" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_it_IT_language_it" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ja_JP_language_ja" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ka_GE_language_ka" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_km_KH_language_km" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ko_KR_language_ko" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_lo_LA_language_lo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_lt_LT_language_lt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_lv_LV_language_lv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_mk_MK_language_mk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_nb_NO_language_nb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_nl_NL_language_nl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_nn_NO_language_nn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_pl_PL_language_pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_pt_BR_language_pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_pt_PT_language_pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ro_RO_language_ro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_date_medium" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_ru_RU_language_ru" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_sk_SK_language_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_sl_SI_language_sl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_sq_AL_language_sq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_sv_SE_language_sv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_sw_KE_language_sw" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_th_TH_language_th" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_tr_TR_language_tr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_uk_UA_language_uk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleC_vi_VN_language_vi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--e/mage---internal-metadatas---fcd_Zend_LocaleL_ru_RU_territory_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--f/mage---fcd_Zend_LocaleC_fil_PH_language_fil" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/cache/mage--f/mage---internal-metadatas---fcd_Zend_LocaleC_fil_PH_language_fil" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1005440439" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1030714474" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/106508859" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1076470165" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1093991924" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1163996054" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1225603927" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1247928042" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1264177106" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/130003897" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1308030134" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1320605857" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1336444863" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1350089606" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1480755699" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1545830490" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1672089889" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1684136330" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1717852531" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1892037871" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/1918491231" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/242242227" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/254854141" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/280229175" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/297898917" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/322328619" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/332287152" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/762057162" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/775721685" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magento/var/report/878346037" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magento/.gitignore" afterPath="$PROJECT_DIR$/magento/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/controllers/IndexController.php" afterPath="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magento/app/etc/local.xml" afterPath="$PROJECT_DIR$/magento/app/etc/local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="magento.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,11 +455,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.307692" vertical-offset="664" max-vertical-offset="1241">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.4679803" vertical-offset="453" max-vertical-offset="1620">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -38,7 +468,7 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magento/app/etc/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="860" max-vertical-offset="3400">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="3600">
               <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
               <folding />
             </state>
@@ -48,8 +478,8 @@
       <file leaf-file-name="local.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magento/app/etc/local.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1224">
-              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+            <state vertical-scroll-proportion="-4.3703704" vertical-offset="674" max-vertical-offset="1296">
+              <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -58,7 +488,7 @@
       <file leaf-file-name="Collection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Resource/Guestbookposts/Collection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="204">
+            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
               <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
               <folding />
             </state>
@@ -68,18 +498,8 @@
       <file leaf-file-name="guestbook_page.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/new/guestbook/guestbook_page.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1547">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="4" selection-end-line="84" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql4-install-0.1.0.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/sql/guestbook_setup/mysql4-install-0.1.0.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="459">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1692">
+              <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -88,17 +508,17 @@
       <file leaf-file-name="showall_page.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/new/guestbook/showall_page.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/etc/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94361526" vertical-offset="315" max-vertical-offset="1003">
+            <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="1062">
               <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
               <folding />
             </state>
@@ -108,29 +528,9 @@
       <file leaf-file-name="Mysql.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magento/lib/Varien/Db/Adapter/Pdo/Mysql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4636" max-vertical-offset="66759">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5130" max-vertical-offset="70686">
               <caret line="308" column="12" selection-start-line="308" selection-start-column="12" selection-end-line="308" selection-end-column="12" />
-              <folding>
-                <marker date="1415178406000" expanded="true" signature="19523:19537" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="24775:24809" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="25926:25943" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="27201:27238" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="28418:28452" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="40601:40644" placeholder="SELECT COUNT..." />
-                <marker date="1415178406000" expanded="true" signature="40770:40804" placeholder="DELETE FROM ..." />
-                <marker date="1415178406000" expanded="true" signature="58027:58051" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="58487:58514" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="58999:59031" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="80459:80480" placeholder="DROP TABLE I..." />
-                <marker date="1415178406000" expanded="true" signature="82695:82722" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="84565:84579" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="87708:87725" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="89005:89073" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="110636:110663" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="111099:111125" placeholder="ALTER TABLE ..." />
-                <marker date="1415178406000" expanded="true" signature="113988:114022" placeholder="Select must ..." />
-                <marker date="1415178406000" expanded="true" signature="122241:122270" placeholder="INSERT INTO ..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +538,7 @@
       <file leaf-file-name="Guestbookposts.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Guestbookposts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="360">
               <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
@@ -152,71 +552,27 @@
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/magento/app/code/local/Magentotutorial/Helloworld/etc/config.xml" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/Magentotutorial/Configviewer/Model/Observer.php" />
-        <option value="$PROJECT_DIR$/magento/app/etc/modules/DS_News.xml" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/sql/dsnews_setup/install-0.0.1.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Model/Resource/News.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Model/Resource/News/Collection.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Model/News.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/View.php" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/ds_news/index.phtml" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/ds_news/view.phtml" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/layout/ds_news.xml" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/Magentotutorial/Weblog/Model/Resource/Setup.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/Magentotutorial/Weblog/etc/config.xml" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Helper/Data.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/etc/config.xml" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/layout/new_guestbook.xml" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/layout/customer.xml" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Helper/Data.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/News.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/Grid.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/News.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/News/Grid.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/News/Edit.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/controllers/Adminhtml/NewsController.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/News/Edit/Tabs.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/News/Edit/Form.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/News/Edit/Tabs/General.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/News/Edit/Tabs/Custom.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/Magentotutorial/Weblog/sql/weblog_setup/upgrade-0.1.0-0.1.5.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/Magentotutorial/Weblog/sql/weblog_setup/upgrade-0.1.0-0.2.0.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/Magentotutorial/Weblog/sql/weblog_setup/mysql4-install-0.1.0.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Resource/Setup.php" />
-        <option value="$PROJECT_DIR$/magento/app/etc/config.xml" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/sql/guestbook_setup/mysql4-install-0.1.0.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Resource/Guestbookpost.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/Magentotutorial/Weblog/Model/Blogpost.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Resource/Guestbookposts/Collection.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/core/Mage/Customer/controllers/AccountController.php" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/base/default/layout/local.xml" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/DS/News/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Block/Posts.php" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/new/guestbook/showall_page.phtml" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/new/guestbook/ss.js" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/new/guestbook/weather.txt" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/controllers/AjaxController.php" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/layout/guestbook.xml" />
+        <option value="$PROJECT_DIR$/magento/app/etc/local.xml" />
         <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/new/guestbook/guestbook_page.phtml" />
-        <option value="$PROJECT_DIR$/magento/lib/Varien/Db/Adapter/Pdo/Mysql.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Guestbookposts.php" />
-        <option value="$PROJECT_DIR$/magento/app/code/local/New/Guestbook/etc/config.xml" />
       </list>
     </option>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="y" value="21" />
+    <option name="width" value="1366" />
+    <option name="height" value="747" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -271,6 +627,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="magento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1910.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1910.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1910.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1910.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,7 +913,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/denwer/home/magento1910.local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dev.bestcables.local" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
@@ -561,7 +957,7 @@
       <node-options />
       <gulpfile />
       <tasks />
-      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
@@ -591,7 +987,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="0" y="21" width="1366" height="747" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -600,19 +996,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2881997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2877013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21745789" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21713442" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -651,6 +1047,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -659,10 +1057,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/magento/app/code/local/DS/News/Block/Adminhtml/News/Edit/Tabs.php">
+    <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Guestbookposts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37142858" vertical-offset="0" max-vertical-offset="646">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="360">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -936,23 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="459">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/new/guestbook/guestbook_page.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1547">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="4" selection-end-line="84" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Resource/Guestbookposts/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="204">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -982,57 +1364,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4636" max-vertical-offset="66759">
           <caret line="308" column="12" selection-start-line="308" selection-start-column="12" selection-end-line="308" selection-end-column="12" />
-          <folding>
-            <marker date="1415178406000" expanded="true" signature="19523:19537" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="24775:24809" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="25926:25943" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="27201:27238" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="28418:28452" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="40601:40644" placeholder="SELECT COUNT..." />
-            <marker date="1415178406000" expanded="true" signature="40770:40804" placeholder="DELETE FROM ..." />
-            <marker date="1415178406000" expanded="true" signature="58027:58051" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="58487:58514" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="58999:59031" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="80459:80480" placeholder="DROP TABLE I..." />
-            <marker date="1415178406000" expanded="true" signature="82695:82722" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="84565:84579" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="87708:87725" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="89005:89073" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="110636:110663" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="111099:111125" placeholder="ALTER TABLE ..." />
-            <marker date="1415178406000" expanded="true" signature="113988:114022" placeholder="Select must ..." />
-            <marker date="1415178406000" expanded="true" signature="122241:122270" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magento/app/etc/local.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1224">
-          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.307692" vertical-offset="664" max-vertical-offset="1241">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magento/app/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="860" max-vertical-offset="3400">
-          <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Guestbookposts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="360">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding />
         </state>
@@ -1040,12 +1378,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/etc/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94361526" vertical-offset="315" max-vertical-offset="1003">
+        <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="1062">
           <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magento/app/design/frontend/rwd/default/template/new/guestbook/guestbook_page.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1692">
+          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/Model/Resource/Guestbookposts/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magento/app/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="3600">
+          <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magento/app/etc/local.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3703704" vertical-offset="674" max-vertical-offset="1296">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magento/app/code/local/New/Guestbook/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4679803" vertical-offset="453" max-vertical-offset="1620">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

@@ -1,0 +1,14 @@
+magento/tmp/*
+magento/app/etc/local.xml
+magento/.htaccess
+magento/.idea/*
+magento/var/*
+magento/.idea/*
+tmp/*
+app/etc/local.xml
+.htaccess
+sitemap.xml
+.idea/*
+.idea/*
+.idea
+var
