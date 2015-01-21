@@ -12,17 +12,15 @@
                 <a/>
             </action>
         </reference>
-        <!--<block type="page/html" name="root" output="toHtml" template="new/guestbook/guestbook_page.phtml">-->
-        <!--</block>-->
     </default>
     <guestbook_index_index>
         <reference name="content">
-            <block type="guestbook/posts" template="new/guestbook/guestbook_page.phtml" />
+            <block type="guestbook/posts" template="new/guestbook/guestbook_page.phtml"/>
         </reference>
     </guestbook_index_index>
     <guestbook_index_showallposts>
         <reference name="content">
-        <block type="guestbook/posts" template="new/guestbook/showall_page.phtml" />
+            <block type="guestbook/posts" template="new/guestbook/showall_page.phtml"/>
         </reference>
     </guestbook_index_showallposts>
 </layout>

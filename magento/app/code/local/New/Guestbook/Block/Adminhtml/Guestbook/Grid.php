@@ -6,16 +6,14 @@ class New_Guestbook_Block_Adminhtml_Guestbook_Grid extends Mage_Adminhtml_Block_
     protected function _prepareCollection()
     {
         $collection = Mage::getModel('guestbook/guestbookposts')->getCollection();
-
+        //var_dump($collection);exit;
         $this->setCollection($collection);
         return parent::_prepareCollection();
     }
 
     protected function _prepareColumns()
     {
-
         $helper = Mage::helper('guestbook');
-
         $this->addColumn('post_id', array(
             'header' => $helper->__('Post ID'),
             'index' => 'post_id'

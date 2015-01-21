@@ -1,5 +1,5 @@
 <?php
-class New_Guestbook_Block_Adminhtml_Guestbook extends Mage_Adminhtml_Block_Abstract
+class New_Guestbook_Block_Adminhtml_Guestbook extends Mage_Adminhtml_Block_Widget_Grid_Container
 {
     protected function _construct()
     {
@@ -13,9 +13,5 @@ class New_Guestbook_Block_Adminhtml_Guestbook extends Mage_Adminhtml_Block_Abstr
         $this->_addButtonLabel = $helper->__('Add News');
 
     }
-//    public function _toHtml()
-//    {
-//        return '<h1>News Module: Admin section</h1>';
-//    }
 
 }
