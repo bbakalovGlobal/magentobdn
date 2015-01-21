@@ -40,6 +40,22 @@
                 <class>New_Guestbook_Model</class>
             </guestbook>
         </models>
+        <!--&lt;!&ndash;от сих&ndash;&gt;-->
+        <!--<models>-->
+            <!--<guestbook>-->
+                <!--<class>New_Guestbook_Model</class>-->
+                <!--<resourceModel>guestbook_resource</resourceModel>-->
+            <!--</guestbook>-->
+            <!--<guestbook_resource>-->
+                <!--<class>New_Guestbook_Model_Resource</class>-->
+                <!--<entities>-->
+                    <!--<guestbookposts>-->
+                        <!--<table>guestbook_posts</table>-->
+                    <!--</guestbookposts>-->
+                <!--</entities>-->
+            <!--</guestbook_resource>-->
+        <!--</models>-->
+        <!--&lt;!&ndash;до сих&ndash;&gt;-->
     </global>
     <frontend>
         <layout>
