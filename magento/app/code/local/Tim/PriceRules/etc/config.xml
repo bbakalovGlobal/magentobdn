@@ -49,13 +49,24 @@
                 <class>Tim_PriceRules_Helper</class>
             </tim_pricerules>
         </helpers>
+        <events>
+            <sales_order_place_before>
+                <observers>
+                    <tim_pricerules>
+                        <type>singleton</type>
+                        <class>Tim_PriceRules_Model_Observer</class>
+                        <method>updateOrderPrice</method>
+                    </tim_pricerules>
+                </observers>
+            </sales_order_place_before>
+        </events>
     </global>
     <frontend>
         <translate>
             <modules>
                 <tim_pricerules>
                     <files>
-                        <default>Tim_PriceRules.csv</default>
+                        <default>Tim_Psales_order_place_afterriceRules.csv</default>
                     </files>
                 </tim_pricerules>
             </modules>
