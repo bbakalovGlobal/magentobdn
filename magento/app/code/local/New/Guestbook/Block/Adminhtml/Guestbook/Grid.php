@@ -25,6 +25,12 @@ class New_Guestbook_Block_Adminhtml_Guestbook_Grid extends Mage_Adminhtml_Block_
             'type' => 'text',
         ));
 
+        $this->addColumn('post', array(
+            'header' => $helper->__('Comment'),
+            'index' => 'post',
+            'type' => 'text',
+        ));
+
         $this->addColumn('timestamp', array(
             'header' => $helper->__('Created'),
             'index' => 'timestamp',
@@ -32,6 +38,25 @@ class New_Guestbook_Block_Adminhtml_Guestbook_Grid extends Mage_Adminhtml_Block_
         ));
 
         return parent::_prepareColumns();
+    }
+
+    protected function _prepareMassaction()
+    {
+        $this->setMassactionIdField('post_id');
+        $this->getMassactionBlock()->setFormFieldName('news');
+
+        $this->getMassactionBlock()->addItem('delete', array(
+            'label' => $this->__('Delete'),
+            'url' => $this->getUrl('*/*/massDelete'),
+        ));
+        return $this;
+    }
+
+    public function getRowUrl($model)
+    {
+        return $this->getUrl('*/*/edit', array(
+            'id' => $model->getId(),
+        ));
     }
 
 }
