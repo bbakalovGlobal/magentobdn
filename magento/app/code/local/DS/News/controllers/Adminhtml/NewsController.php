@@ -44,6 +44,7 @@ class DS_News_Adminhtml_NewsController extends Mage_Adminhtml_Controller_Action
                 $model->save();
 
                 Mage::getSingleton('adminhtml/session')->addSuccess($this->__('News was saved successfully'));
+                //var_dump($data);exit;
                 Mage::getSingleton('adminhtml/session')->setFormData(false);
                 $this->_redirect('*/*/');
             } catch (Exception $e) {

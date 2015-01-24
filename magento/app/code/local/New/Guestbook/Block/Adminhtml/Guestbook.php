@@ -10,7 +10,7 @@ class New_Guestbook_Block_Adminhtml_Guestbook extends Mage_Adminhtml_Block_Widge
         $this->_controller = 'adminhtml_guestbook';
 
         $this->_headerText = $helper->__('Guestbook Management');
-        $this->_addButtonLabel = $helper->__('Add News');
+        $this->_addButtonLabel = $helper->__('Add Post');
 
     }
 

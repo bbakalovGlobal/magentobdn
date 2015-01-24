@@ -43,7 +43,7 @@ class New_Guestbook_Block_Adminhtml_Guestbook_Grid extends Mage_Adminhtml_Block_
     protected function _prepareMassaction()
     {
         $this->setMassactionIdField('post_id');
-        $this->getMassactionBlock()->setFormFieldName('news');
+        $this->getMassactionBlock()->setFormFieldName('posts');
 
         $this->getMassactionBlock()->addItem('delete', array(
             'label' => $this->__('Delete'),

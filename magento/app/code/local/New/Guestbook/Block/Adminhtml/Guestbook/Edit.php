@@ -1,6 +1,6 @@
 <?php
 
-class DS_News_Block_Adminhtml_Guestbook_Edit extends Mage_Adminhtml_Block_Widget_Form_Container
+class New_Guestbook_Block_Adminhtml_Guestbook_Edit extends Mage_Adminhtml_Block_Widget_Form_Container
 {
 
     protected function _construct()
@@ -12,12 +12,12 @@ class DS_News_Block_Adminhtml_Guestbook_Edit extends Mage_Adminhtml_Block_Widget
     public function getHeaderText()
     {
         $helper = Mage::helper('guestbook');
-        $model = Mage::registry('current_news');
+        $model = Mage::registry('current_posts');
 
         if ($model->getId()) {
-            return $helper->__("Edit News item '%s'", $this->escapeHtml($model->getTitle()));
+            return $helper->__("Edit comment with id '%s'", $this->escapeHtml($model->getId()));
         } else {
-            return $helper->__("Add News item");
+            return $helper->__("Add comment");
         }
     }
 

@@ -16,11 +16,12 @@ class New_Guestbook_Adminhtml_GuestbookController extends Mage_Adminhtml_Control
 
     public function editAction()
     {
+
         $id = (int) $this->getRequest()->getParam('id');
-        Mage::register('current_news', Mage::getModel('guestbook/guestbookposts')->load($id));
+        Mage::register('current_posts', Mage::getModel('guestbook/guestbookposts')->load($id));
 
         $this->loadLayout()->_setActiveMenu('guestbook');
-        $this->_addContent($this->getLayout()->createBlock('guestbook/adminhtml_guestbook_edit')); // обрати внимание
+        $this->_addContent($this->getLayout()->createBlock('guestbook/adminhtml_guestbook_edit'));
         $this->renderLayout();
     }
 
@@ -35,7 +36,7 @@ class New_Guestbook_Adminhtml_GuestbookController extends Mage_Adminhtml_Control
                 }
                 $model->save();
 
-                Mage::getSingleton('adminhtml/session')->addSuccess($this->__('News was saved successfully'));
+                Mage::getSingleton('adminhtml/session')->addSuccess($this->__('Comment was saved successfully'));
                 Mage::getSingleton('adminhtml/session')->setFormData(false);
                 $this->_redirect('*/*/');
             } catch (Exception $e) {
@@ -56,7 +57,7 @@ class New_Guestbook_Adminhtml_GuestbookController extends Mage_Adminhtml_Control
         if ($id = $this->getRequest()->getParam('id')) {
             try {
                 Mage::getModel('guestbook/guestbookposts')->setId($id)->delete();
-                Mage::getSingleton('adminhtml/session')->addSuccess($this->__('News was deleted successfully'));
+                Mage::getSingleton('adminhtml/session')->addSuccess($this->__('Comment was deleted successfully'));
             } catch (Exception $e) {
                 Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
                 $this->_redirect('*/*/edit', array('id' => $id));
@@ -67,13 +68,14 @@ class New_Guestbook_Adminhtml_GuestbookController extends Mage_Adminhtml_Control
 
     public function massDeleteAction()
     {
-        $news = $this->getRequest()->getParam('news', null); // откуда берёт параметр news
-        if (is_array($news) && sizeof($news) > 0) {
+        $posts = $this->getRequest()->getParam('posts', null); // param 'posts' take from $this->getMassactionBlock()->setFormFieldName('posts');
+
+        if (is_array($posts) && sizeof($posts) > 0) {
             try {
-                foreach ($news as $id) {
+                foreach ($posts as $id) {
                     Mage::getModel('guestbook/guestbookposts')->setId($id)->delete();
                 }
-                $this->_getSession()->addSuccess($this->__('Total of %d news have been deleted', sizeof($news)));
+                $this->_getSession()->addSuccess($this->__('Total of %d comment(s) have been deleted', sizeof($posts)));
             } catch (Exception $e) {
                 $this->_getSession()->addError($e->getMessage());
             }

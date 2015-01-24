@@ -1,12 +1,12 @@
 <?php
 
-class DS_News_Block_Adminhtml_Guestbook_Edit_Form extends Mage_Adminhtml_Block_Widget_Form
+class New_Guestbook_Block_Adminhtml_Guestbook_Edit_Form extends Mage_Adminhtml_Block_Widget_Form
 {
 
     protected function _prepareForm()
     {
-            $helper = Mage::helper('guestbook');
-        $model = Mage::registry('current_news');
+        $helper = Mage::helper('guestbook');
+        $model = Mage::registry('current_posts');
 
         $form = new Varien_Data_Form(array(
             'id' => 'edit_form',
@@ -19,7 +19,7 @@ class DS_News_Block_Adminhtml_Guestbook_Edit_Form extends Mage_Adminhtml_Block_W
 
         $this->setForm($form);
 
-        $fieldset = $form->addFieldset('news_form', array('legend' => $helper->__('News Information')));
+        $fieldset = $form->addFieldset('post_form', array('legend' => $helper->__('Post Information')));
 
         $fieldset->addField('name', 'text', array(
             'label' => $helper->__('Name'),
@@ -42,7 +42,7 @@ class DS_News_Block_Adminhtml_Guestbook_Edit_Form extends Mage_Adminhtml_Block_W
 
         $form->setUseContainer(true);
 
-        if($data = Mage::getSingleton('adminhtml/session')->getFormData()){
+        if ($data = Mage::getSingleton('adminhtml/session')->getFormData()) {
             $form->setValues($data);
         } else {
             $form->setValues($model->getData());

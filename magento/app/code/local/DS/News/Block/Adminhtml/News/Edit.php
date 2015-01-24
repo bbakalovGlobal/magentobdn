@@ -12,7 +12,7 @@ class DS_News_Block_Adminhtml_News_Edit extends Mage_Adminhtml_Block_Widget_Form
     {
         $helper = Mage::helper('dsnews');
         $model = Mage::registry('current_news');
-
+        var_dump($model);
         if ($model->getId()) {
             return $helper->__("Edit News item '%s'", $this->escapeHtml($model->getTitle()));
         } else {
