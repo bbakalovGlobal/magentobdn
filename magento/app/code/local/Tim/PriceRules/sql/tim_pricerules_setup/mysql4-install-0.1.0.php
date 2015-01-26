@@ -4,9 +4,8 @@ $installer = $this;
 $installer->startSetup();
 
 $installer->run("
-    ALTER TABLE {$this->getTable('sales/order_item')}
-        ADD `tim_clearancesales_parameters` TEXT NULL,
-        ADD `tim_custom_parameters` TEXT NULL;
+    ALTER TABLE {$this->getTable('catalogrule/rule')}
+        ADD `hide_old_price` smallint UNSIGNED NOT NULL DEFAULT 0;
 ");
 
 $installer->endSetup();
