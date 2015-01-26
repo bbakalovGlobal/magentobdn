@@ -21,10 +21,9 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
 
     /**
      * @param Mage_Catalog_Model_Product $product
-     * @param float $actionAmount
      * @return bool
      */
-    public function isOldPrice(Mage_Catalog_Model_Product $product, $actionAmount)
+    public function isOldPrice(Mage_Catalog_Model_Product $product)
     {
         $productId  = $product->getId();
         $storeId    = $product->getStoreId();
@@ -35,7 +34,7 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
             $customerGroupId = Mage::getSingleton('customer/session')->getCustomerGroupId();
         }
         $dateTs = Mage::app()->getLocale()->date()->getTimestamp();
-        $productRule = $this->getRuleFromProduct($dateTs, $websiteId, $customerGroupId, $productId, $actionAmount);
+        $productRule = $this->getRuleFromProduct($dateTs, $websiteId, $customerGroupId, $productId);
         $productRule = new Varien_Object($productRule);
         if ($productRule->getRuleId()) {
             $rule = $this->getHideOldPrice($productRule->getRuleId());
@@ -54,10 +53,9 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
      * @param int $websiteId
      * @param int $customerGroupId
      * @param int $productId
-     * @param int $actionAmount
      * @return array
      */
-    public function getRuleFromProduct($date, $websiteId, $customerGroupId, $productId, $actionAmount)
+    public function getRuleFromProduct($date, $websiteId, $customerGroupId, $productId)
     {
         $adapter = $this->_getReadAdapter();
         if (is_string($date)) {
@@ -68,9 +66,9 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
             ->where('website_id = ?', $websiteId)
             ->where('customer_group_id = ?', $customerGroupId)
             ->where('product_id = ?', $productId)
-            ->where('action_amount = ?', $actionAmount)
             ->where('from_time = 0 or from_time < ?', $date)
-            ->where('to_time = 0 or to_time > ?', $date);
+            ->where('to_time = 0 or to_time > ?', $date)
+            ->order('sort_order ASC');
 
         return $adapter->raw_fetchRow($select);
     }

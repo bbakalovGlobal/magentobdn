@@ -72,10 +72,21 @@
             <modules>
                 <tim_pricerules>
                     <files>
-                        <default>Tim_Psales_order_place_afterriceRules.csv</default>
+                        <default>Tim_PriceRules.csv</default>
                     </files>
                 </tim_pricerules>
             </modules>
         </translate>
     </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <tim_pricerules>
+                    <files>
+                        <default>Tim_PriceRules.csv</default>
+                    </files>
+                </tim_pricerules>
+            </modules>
+        </translate>
+    </adminhtml>
 </config>

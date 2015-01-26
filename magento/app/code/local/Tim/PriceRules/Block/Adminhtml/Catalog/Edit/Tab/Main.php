@@ -123,8 +123,8 @@ class Tim_PriceRules_Block_Adminhtml_Catalog_Edit_Tab_Main
         ));
 
         $fieldset->addField('hide_old_price', 'select', array(
-            'label'     => Mage::helper('catalogrule')->__('Hide Old Price'),
-            'title'     => Mage::helper('catalogrule')->__('Hide Old Price'),
+            'label'     => Mage::helper('tim_pricerules')->__('Hide Old Price'),
+            'title'     => Mage::helper('tim_pricerules')->__('Hide Old Price'),
             'name'      => 'hide_old_price',
             'required' => false,
             'options'    => array(

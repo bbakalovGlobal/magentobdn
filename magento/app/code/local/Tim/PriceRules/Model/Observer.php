@@ -11,12 +11,13 @@ class Tim_PriceRules_Model_Observer
 {
     /**
      * @param Mage_Sales_Model_Order $observer
+     * @return $this
      */
     public function updateOrderPrice($observer)
     {
         $order = $observer->getOrder();
         foreach ($order->getAllItems() as $item) {
-            $discountPrice = $item->getPrice() - $item->getDiscountAmount();
+            $discountPrice = $item->getPrice() - ($item->getDiscountAmount()/$item->getQtyOrdered());
             $item->setPrice($discountPrice);
             $item->setBasePrice($discountPrice);
         }
