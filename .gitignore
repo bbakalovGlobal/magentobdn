@@ -1,4 +1,4 @@
-/.idea/misc.xml
+/.idea/*
 magento/tmp/*
 magento/app/etc/local.xml
 magento/.htaccess
