@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/**
+ * Tim
+ *
+ * @category   Tim
+ * @package    Tim_PriceRules
+ * @copyright  Copyright (c) 2015 Tim (http://tim.pl)
+ * @author     Bogdan Bakalov
+ */
+-->
+
+<config>
+    <modules>
+        <Tim_PriceRules>
+            <version>0.1.0</version>
+        </Tim_PriceRules>
+    </modules>
+    <global>
+        <models>
+            <tim_pricerules>
+                <class>Tim_PriceRules_Model</class>
+            </tim_pricerules>
+        </models>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <promo_catalog_edit_tab_main>Tim_PriceRules_Block_Adminhtml_Catalog_Edit_Tab_Main</promo_catalog_edit_tab_main>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <resources>
+            <tim_pricerules_setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+                <setup>
+                    <module>Tim_PriceRules</module>
+                </setup>
+            </tim_pricerules_setup>
+            <tim_pricerules_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </tim_pricerules_write>
+            <tim_pricerules_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </tim_pricerules_read>
+        </resources>
+        <helpers>
+            <tim_pricerules>
+                <class>Tim_PriceRules_Helper</class>
+            </tim_pricerules>
+        </helpers>
+        <events>
+            <sales_order_place_before>
+                <observers>
+                    <tim_pricerules>
+                        <type>singleton</type>
+                        <class>Tim_PriceRules_Model_Observer</class>
+                        <method>updateOrderPrice</method>
+                    </tim_pricerules>
+                </observers>
+            </sales_order_place_before>
+        </events>
+    </global>
+    <frontend>
+        <translate>
+            <modules>
+                <tim_pricerules>
+                    <files>
+                        <default>Tim_PriceRules.csv</default>
+                    </files>
+                </tim_pricerules>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <tim_pricerules>
+                    <files>
+                        <default>Tim_PriceRules.csv</default>
+                    </files>
+                </tim_pricerules>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
