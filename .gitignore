@@ -4,3 +4,4 @@ magento/app/etc/local.xml
 magento/.htaccess
 magento/.idea/*
 magento/var/*
+magento/media/*
