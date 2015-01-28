@@ -35,10 +35,12 @@ class Tim_CustomerGroups_Block_Adminhtml_Group extends Mage_Adminhtml_Block_Cust
 {
     public function __construct()
     {
-        die();
-        $this->_controller = 'customer_group';
-        $this->_headerText = Mage::helper('customer')->__('TESTESTEST');
-        $this->_addButtonLabel = Mage::helper('customer')->__('BLABLABLA');
+        parent::__construct();
+//        $this->_removeButton('add');
+//        $this->_addButton('roller', array(
+//            'label' => $this->__('TESTESTESTESTEST')
+//        ));
+        $this->_addButtonLabel = Mage::helper('tim_customergroups')->__('ChangeChange');
     }
 
 }
