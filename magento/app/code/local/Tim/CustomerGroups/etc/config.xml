@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/**
+ * Tim
+ *
+ * @category   Tim
+ * @package    Tim_CustomerGroups
+ * @copyright  Copyright (c) 2015 Tim (http://tim.pl)
+ * @author     Bogdan Bakalov
+ */
+-->
+
+<config>
+    <modules>
+        <Tim_CustomerGroups>
+            <version>0.1.0</version>
+        </Tim_CustomerGroups>
+    </modules>
+    <global>
+        <!--<models>-->
+        <!--<tim_customergroups>-->
+        <!--<class>Tim_CustomerGroups_Model</class>-->
+        <!--</tim_customergroups>-->
+        <!--</models>-->
+        <!--<blocks>-->
+        <!--<adminhtml>-->
+        <!--</adminhtml>-->
+        <!--</blocks>-->
+        <!--<resources>-->
+        <!--<tim_customergroups_setup>-->
+        <!--<connection>-->
+        <!--<use>core_setup</use>-->
+        <!--</connection>-->
+        <!--<setup>-->
+        <!--<module>Tim_CustomerGroups</module>-->
+        <!--</setup>-->
+        <!--</tim_customergroups_setup>-->
+        <!--<tim_customergroups_write>-->
+        <!--<connection>-->
+        <!--<use>core_write</use>-->
+        <!--</connection>-->
+        <!--</tim_customergroups_write>-->
+        <!--<tim_customergroups_read>-->
+        <!--<connection>-->
+        <!--<use>core_read</use>-->
+        <!--</connection>-->
+        <!--</tim_customergroups_read>-->
+        <!--</resources>-->
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <customer_group>Tim_CustomerGroups_Block_Adminhtml_Group</customer_group>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <helpers>
+            <tim_customergroups>
+                <class>Tim_CustomerGroups_Helper</class>
+            </tim_customergroups>
+        </helpers>
+    </global>
+    <frontend>
+        <translate>
+            <modules>
+                <tim_customergroups>
+                    <files>
+                        <default>Tim_CustomerGroups.csv</default>
+                    </files>
+                </tim_customergroups>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <tim_customergroups>
+                    <files>
+                        <default>Tim_CustomerGroups.csv</default>
+                    </files>
+                </tim_customergroups>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
