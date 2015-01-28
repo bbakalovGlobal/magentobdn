@@ -28,19 +28,15 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
         $productId  = $product->getId();
         $storeId    = $product->getStoreId();
         $websiteId  = Mage::app()->getStore($storeId)->getWebsiteId();
-        if ($product->hasCustomerGroupId()) {
-            $customerGroupId = $product->getCustomerGroupId();
-        } else {
-            $customerGroupId = Mage::getSingleton('customer/session')->getCustomerGroupId();
-        }
+        $customerGroupId = Mage::getSingleton('customer/session')->getCustomerGroupId();
         $dateTs = Mage::app()->getLocale()->date()->getTimestamp();
         $productRule = $this->getRuleFromProduct($dateTs, $websiteId, $customerGroupId, $productId);
-        $productRule = new Varien_Object($productRule);
-        if ($productRule->getRuleId()) {
+        $productRuleObj = new Varien_Object($productRule);
+        if ($productRuleObj->getRuleId()) {
             $rule = $this->getHideOldPrice($productRule->getRuleId());
-            $rule = new Varien_Object($rule);
-            if ($rule->getHideOldPrice()) {
-                return ((int)$rule->getHideOldPrice() == 1) ? false : true;
+            $ruleObj = new Varien_Object($rule);
+            if ($ruleObj->getHideOldPrice()) {
+                return ((int)$ruleObj->getHideOldPrice() == 1) ? false : true;
             }
         }
         return true;
