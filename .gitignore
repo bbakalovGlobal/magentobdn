@@ -1,0 +1,6 @@
+/.idea/misc.xml
+magento/tmp/*
+magento/app/etc/local.xml
+magento/.htaccess
+magento/.idea/*
+magento/var/*
