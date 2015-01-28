@@ -5,3 +5,5 @@ magento/.htaccess
 magento/.idea/*
 magento/var/*
 magento/media/*
+
+.idea/magento1910.local.iml
