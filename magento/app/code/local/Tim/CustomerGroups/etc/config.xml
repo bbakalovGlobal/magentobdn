@@ -59,6 +59,17 @@
                 <class>Tim_CustomerGroups_Helper</class>
             </tim_customergroups>
         </helpers>
+        <events>
+            <adminhtml_customer_prepare_save>
+                <observers>
+                    <tim_customergroups>
+                        <type>singleton</type>
+                        <class>Tim_CustomerGroups_Model_Observer</class>
+                        <method>addSuffixFromGroup</method>
+                    </tim_customergroups>
+                </observers>
+            </adminhtml_customer_prepare_save>
+        </events>
     </global>
     <frontend>
         <translate>
