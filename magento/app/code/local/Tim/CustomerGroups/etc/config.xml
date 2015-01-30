@@ -27,26 +27,17 @@
         <!--<adminhtml>-->
         <!--</adminhtml>-->
         <!--</blocks>-->
-        <!--<resources>-->
-        <!--<tim_customergroups_setup>-->
-        <!--<connection>-->
-        <!--<use>core_setup</use>-->
-        <!--</connection>-->
-        <!--<setup>-->
-        <!--<module>Tim_CustomerGroups</module>-->
-        <!--</setup>-->
-        <!--</tim_customergroups_setup>-->
-        <!--<tim_customergroups_write>-->
-        <!--<connection>-->
-        <!--<use>core_write</use>-->
-        <!--</connection>-->
-        <!--</tim_customergroups_write>-->
-        <!--<tim_customergroups_read>-->
-        <!--<connection>-->
-        <!--<use>core_read</use>-->
-        <!--</connection>-->
-        <!--</tim_customergroups_read>-->
-        <!--</resources>-->
+        <resources>
+            <tim_customergroups_setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+                <setup>
+                    <module>Tim_CustomerGroups</module>
+                    <class>Mage_Customer_Model_Entity_Setup</class>
+                </setup>
+            </tim_customergroups_setup>
+        </resources>
         <blocks>
             <adminhtml>
                 <rewrite>
