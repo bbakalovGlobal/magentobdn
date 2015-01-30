@@ -13,6 +13,7 @@ class Tim_CustomerGroups_Model_Observer
     {
         $customer = $observer->getCustomer();
         $groupId = $customer->getData('group_id');
+        $groupLable = '';
 
         $model = Mage::getSingleton('customer/customer_attribute_source_group');
         $options = $model->getAllOptions();
