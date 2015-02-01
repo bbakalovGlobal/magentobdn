@@ -33,7 +33,7 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
         $productRule = $this->getRuleFromProduct($dateTs, $websiteId, $customerGroupId, $productId);
         $productRuleObj = new Varien_Object($productRule);
         if ($productRuleObj->getRuleId()) {
-            $rule = $this->getHideOldPrice($productRule->getRuleId());
+            $rule = $this->getHideOldPrice($productRuleObj->getRuleId());
             $ruleObj = new Varien_Object($rule);
             if ($ruleObj->getHideOldPrice()) {
                 return ((int)$ruleObj->getHideOldPrice() == 1) ? false : true;
