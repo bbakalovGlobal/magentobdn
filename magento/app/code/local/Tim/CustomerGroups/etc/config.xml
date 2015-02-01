@@ -14,7 +14,7 @@
 <config>
     <modules>
         <Tim_CustomerGroups>
-            <version>0.1.0</version>
+            <version>0.4.0</version>
         </Tim_CustomerGroups>
     </modules>
     <global>
@@ -37,6 +37,15 @@
                     <class>Mage_Customer_Model_Entity_Setup</class>
                 </setup>
             </tim_customergroups_setup>
+            <customcatattrb_setup>
+                <setup>
+                    <module>Tim_CustomerGroups</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </customcatattrb_setup>
         </resources>
         <blocks>
             <adminhtml>
