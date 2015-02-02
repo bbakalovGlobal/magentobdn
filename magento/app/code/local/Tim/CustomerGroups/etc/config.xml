@@ -69,6 +69,14 @@
                     </tim_customergroups>
                 </observers>
             </adminhtml_customer_prepare_save>
+            <catalog_product_edit_action>
+                <observers>
+                    <lock_attributes>
+                        <class>Tim_CustomerGroups_Model_Observer</class>
+                        <method>lockAttributes</method>
+                    </lock_attributes>
+                </observers>
+            </catalog_product_edit_action>
         </events>
     </global>
     <frontend>

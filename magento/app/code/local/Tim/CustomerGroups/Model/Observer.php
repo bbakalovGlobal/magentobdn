@@ -27,4 +27,12 @@ class Tim_CustomerGroups_Model_Observer
 
         return $this;
     }
+
+    public function lockAttributes($observer) {
+        $event = $observer->getEvent();
+        $product = $event->getProduct();
+        $q = $product->lockAttribute('price');
+
+        return $this;
+    }
 }
