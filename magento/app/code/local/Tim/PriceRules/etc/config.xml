@@ -29,6 +29,12 @@
                     <promo_catalog_edit_tab_main>Tim_PriceRules_Block_Adminhtml_Catalog_Edit_Tab_Main</promo_catalog_edit_tab_main>
                 </rewrite>
             </adminhtml>
+            <checkout>
+                <rewrite>
+                    <cart>Tim_PriceRules_Block_Cart</cart>
+                    <onepage_review_info>Tim_PriceRules_Block_Onepage_Review_Info</onepage_review_info>
+                </rewrite>
+            </checkout>
         </blocks>
         <resources>
             <tim_pricerules_setup>

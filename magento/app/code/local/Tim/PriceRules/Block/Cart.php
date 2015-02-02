@@ -3,12 +3,11 @@
  * Tim
  *
  * @category   Tim
- * @package    Tim_Checkout
+ * @package    Tim_PriceRules
  * @copyright  Copyright (c) 2013 Tim (http://tim.pl)
- * @author     Jacek Kiernicki (j.kiernicki@tim.pl)
+ * @author     Bogdan Bakalov
  */
-
-class Tim_Checkout_Block_Cart extends Mage_Checkout_Block_Cart
+class Tim_PriceRules_Block_Cart extends Mage_Checkout_Block_Cart
 {
     /**
      * Get item row html
