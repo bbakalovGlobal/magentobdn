@@ -1750,6 +1750,7 @@ a.button:hover {
   margin: 7px 0;
   font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
 }
+span.price-box .price {font-size: 14px!important; color:#636363!important; padding: 0px 46px 0px 46px}
 
 .price-box p {
   margin-bottom: 0;
