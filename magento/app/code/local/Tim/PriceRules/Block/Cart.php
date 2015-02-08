@@ -19,6 +19,7 @@ class Tim_PriceRules_Block_Cart extends Mage_Checkout_Block_Cart
     {
         $discountPrice = $item->getPrice() - ($item->getDiscountAmount()/$item->getQty());
         $item->setCustomPrice($discountPrice);
+        $item->setOriginalRowTotal($item->getProduct()->getPrice() * $item->getQty());
         $item->setRowTotal($discountPrice * $item->getQty());
         $renderer = $this->getItemRenderer($item->getProductType())->setItem($item);
         return $renderer->toHtml();

@@ -29,7 +29,7 @@ $_item = $this->getItem();
 $isVisibleProduct = $_item->getProduct()->isVisibleInSiteVisibility();
 $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage_Catalog_Model_Product_Attribute_Source_Msrp_Type::TYPE_BEFORE_ORDER_CONFIRM);
 ?>
-<?php $showOldPrice = Mage::getModel('tim_pricerules/rule')->isOldPrice($_item);?>
+<?php $showOldPrice = Mage::getModel('tim_pricerules/rule')->isOldPrice($_item->getProduct());?>
 <tr>
     <td class="product-cart-image">
         <?php if ($this->hasProductUrl()):?>
@@ -130,7 +130,7 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
                     <span class="price-box">
                         <p class="old-price">
                             <span class="price">
-                                <?php echo $this->helper('checkout')->formatPrice($_item->getPrice()); ?>
+                                <?php echo $this->helper('checkout')->formatPrice($_item->getProduct()->getPrice()); ?>
                             </span>
                         </p>
                     </span>
@@ -245,13 +245,15 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
             <span class="cart-tax-total" onclick="taxToggle('esubtotal-item-tax-details<?php echo $_item->getId(); ?>', this, 'cart-tax-total-expanded');">
         <?php else: ?>
             <span class="cart-price">
-                <span class="price-box">
-                    <p class="old-price">
-                        <span class="price">
-                            <?php echo $this->helper('checkout')->formatPrice($_item->getBaseRowTotal()); ?>
-                        </span>
-                    </p>
-                </span>
+                <?php if ($showOldPrice): ?>
+                    <span class="price-box">
+                        <p class="old-price">
+                            <span class="price">
+                                <?php echo $this->helper('checkout')->formatPrice($_item->getOriginalRowTotal()); ?>
+                            </span>
+                        </p>
+                    </span>
+                <?php endif; ?>
         <?php endif; ?>
 
             <?php if ($canApplyMsrp): ?>

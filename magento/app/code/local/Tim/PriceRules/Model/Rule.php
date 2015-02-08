@@ -35,11 +35,11 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
         if ($productRuleObj->getRuleId()) {
             $rule = $this->getHideOldPrice($productRuleObj->getRuleId());
             $ruleObj = new Varien_Object($rule);
-            if ($ruleObj->getHideOldPrice()) {
+            if (!is_null($ruleObj->getHideOldPrice())) {
                 return ((int)$ruleObj->getHideOldPrice() == 1) ? false : true;
             }
         }
-        return true;
+        return false;
     }
 
     /**
@@ -65,7 +65,6 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
             ->where('from_time = 0 or from_time < ?', $date)
             ->where('to_time = 0 or to_time > ?', $date)
             ->order('sort_order ASC');
-
         return $adapter->raw_fetchRow($select);
     }
 
