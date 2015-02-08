@@ -32,7 +32,7 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
 <?php
 $showOldPrice = Mage::getModel('tim_pricerules/rule')->isOldPrice($_item->getProduct());
 if (is_null($showOldPrice)) {
-    $showOldPrice = !is_null($_item->getDiscountAmount());
+    $showOldPrice = (bool)$_item->getDiscountAmount() > 0;
 }
 ?>
 <tr>
