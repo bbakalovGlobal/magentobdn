@@ -25,7 +25,12 @@
  */
 ?>
 <?php $_item = $this->getItem()?>
-<?php $showOldPrice = Mage::getModel('tim_pricerules/rule')->isOldPrice($_item->getProduct());?>
+<?php
+$showOldPrice = Mage::getModel('tim_pricerules/rule')->isOldPrice($_item->getProduct());
+if (is_null($showOldPrice)) {
+    $showOldPrice = !is_null($_item->getDiscountAmount());
+}
+?>
 <tr>
     <td><h3 class="product-name"><?php echo $this->escapeHtml($this->getProductName()) ?></h3>
         <?php if ($_options = $this->getOptionList()):?>

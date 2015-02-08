@@ -21,7 +21,7 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
 
     /**
      * @param Mage_Catalog_Model_Product $product
-     * @return bool
+     * @return mixed
      */
     public function isOldPrice(Mage_Catalog_Model_Product $product)
     {
@@ -39,7 +39,6 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
                 return ((int)$ruleObj->getHideOldPrice() == 1) ? false : true;
             }
         }
-        return false;
     }
 
     /**

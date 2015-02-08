@@ -17,9 +17,11 @@ class Tim_PriceRules_Model_Observer
     {
         $order = $observer->getOrder();
         foreach ($order->getAllItems() as $item) {
-            $discountPrice = $item->getPrice() - ($item->getDiscountAmount()/$item->getQtyOrdered());
-            $item->setPrice($discountPrice);
-            $item->setBasePrice($discountPrice);
+            if ($item->getDiscountAmount()) {
+                $discountPrice = $item->getPrice() - ($item->getDiscountAmount() / $item->getQtyOrdered());
+                $item->setPrice($discountPrice);
+                $item->setBasePrice($discountPrice);
+            }
         }
         return $this;
     }
