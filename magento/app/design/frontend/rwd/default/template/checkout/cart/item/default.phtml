@@ -30,10 +30,7 @@ $isVisibleProduct = $_item->getProduct()->isVisibleInSiteVisibility();
 $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage_Catalog_Model_Product_Attribute_Source_Msrp_Type::TYPE_BEFORE_ORDER_CONFIRM);
 ?>
 <?php
-$showOldPrice = Mage::getModel('tim_pricerules/rule')->isOldPrice($_item->getProduct());
-if (is_null($showOldPrice)) {
-    $showOldPrice = (bool)$_item->getDiscountAmount() > 0;
-}
+$showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
 ?>
 <tr>
     <td class="product-cart-image">
