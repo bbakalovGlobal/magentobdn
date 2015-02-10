@@ -68,7 +68,7 @@ $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
                                     <?php endif; ?>
                                     <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()+$_item->getWeeeTaxAppliedAmount()+$_item->getWeeeTaxDisposition()); ?>
                                 <?php else: ?>
-                                    <?php if ($showOldPrice): ?>
+                                    <?php if ($showOldPrice && ($_item->getPrice() < $_item->getProduct()->getPrice())): ?>
                                         <span class="price-box-review">
                                             <p class="old-price">
                                                 <span class="price">

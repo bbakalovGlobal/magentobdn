@@ -17,11 +17,10 @@ class Tim_PriceRules_Block_Onepage_Review_Info extends Mage_Checkout_Block_Onepa
      */
     public function getItemHtml(Varien_Object $item)
     {
-        if ($item->getDiscountAmount() > 0) {
-            $discountPrice = $item->getPrice() - ($item->getDiscountAmount() / $item->getQty());
-            $item->setCustomPrice($discountPrice);
+        if ($item->getPrice() < $item->getProduct()->getPrice()) {
+            $item->setCustomPrice($item->getPrice());
             $item->setOriginalRowTotal($item->getProduct()->getPrice() * $item->getQty());
-            $item->setRowTotal($discountPrice * $item->getQty());
+            $item->setRowTotal($item->getPrice() * $item->getQty());
         }
         $type = $this->_getItemType($item);
 

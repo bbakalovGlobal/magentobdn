@@ -59,7 +59,7 @@ $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
             <span class="cart-tax-total" onclick="taxToggle('eunit-item-tax-details<?php echo $_item->getId(); ?>', this, 'cart-tax-total-expanded');">
         <?php else: ?>
             <span class="cart-price">
-                <?php if ($showOldPrice): ?>
+                <?php if ($showOldPrice && $_item->getDiscountAmount()): ?>
                     <span class="price-box-review">
                         <p class="old-price">
                             <span class="price">
@@ -117,7 +117,7 @@ $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
             <span class="cart-tax-total" onclick="taxToggle('unit-item-tax-details<?php echo $_item->getId(); ?>', this, 'cart-tax-total-expanded');">
         <?php else: ?>
             <span class="cart-price">
-                <?php if ($showOldPrice): ?>
+                <?php if ($showOldPrice && $_item->getDiscountAmount()): ?>
                     <span class="price-box-review">
                         <p class="old-price">
                             <span class="price">
@@ -174,7 +174,7 @@ $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
             <span class="cart-tax-total" onclick="taxToggle('esubtotal-item-tax-details<?php echo $_item->getId(); ?>', this, 'cart-tax-total-expanded');">
         <?php else: ?>
             <span class="cart-price">
-                <?php if ($showOldPrice): ?>
+                <?php if ($showOldPrice && $_item->getDiscountAmount()): ?>
                     <span class="price-box-review">
                         <p class="old-price">
                             <span class="price">
@@ -230,7 +230,7 @@ $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
             <span class="cart-tax-total" onclick="taxToggle('subtotal-item-tax-details<?php echo $_item->getId(); ?>', this, 'cart-tax-total-expanded');">
         <?php else: ?>
             <span class="cart-price">
-                <?php if ($showOldPrice): ?>
+                <?php if ($showOldPrice && $_item->getDiscountAmount()): ?>
                     <span class="price-box-review">
                         <p class="old-price">
                             <span class="price">

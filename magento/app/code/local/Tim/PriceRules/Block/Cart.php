@@ -17,11 +17,10 @@ class Tim_PriceRules_Block_Cart extends Mage_Checkout_Block_Cart
      */
     public function getItemHtml(Mage_Sales_Model_Quote_Item $item)
     {
-        if ($item->getDiscountAmount() > 0) {
-            $discountPrice = $item->getProduct()->getPrice() - ($item->getDiscountAmount() / $item->getQty());
-            $item->setCustomPrice($discountPrice);
+        if ($item->getPrice() < $item->getProduct()->getPrice()) {
+            $item->setCustomPrice($item->getPrice());
             $item->setOriginalRowTotal($item->getProduct()->getPrice() * $item->getQty());
-            $item->setRowTotal($discountPrice * $item->getQty());
+            $item->setRowTotal($item->getPrice() * $item->getQty());
         }
         $renderer = $this->getItemRenderer($item->getProductType())->setItem($item);
         return $renderer->toHtml();

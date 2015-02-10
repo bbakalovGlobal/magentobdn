@@ -85,7 +85,7 @@ foreach ($this->getQuote()->getAllItems() as $item) {
                     <span class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></span>
                 <?php else: ?>
                     <span class="label"><?php echo $this->__('Cart Subtotal:') ?></span>
-                    <?php if ($showOldPrice): ?>
+                    <?php if ($showOldPrice && ($this->getQuote()->getBaseSubtotalWithDiscount() < $originalSubTotal)): ?>
                         <span class="price-box-review">
                             <span class="price">
                                 <?php echo $this->helper('checkout')->formatPrice($originalSubTotal); ?>
