@@ -45,7 +45,7 @@ $isDiscount = false;
 foreach ($this->getQuote()->getAllItems() as $item) {
     $originalSubTotal += ($item->getProduct()->getPrice()*$item->getQty());
     if ($item->getDiscountAmount() > 0) {
-        $discountSubTotal += $item->getPrice()-($item->getDiscountAmount()/$item->getQty());
+        $discountSubTotal += ($item->getPrice()-($item->getDiscountAmount()/$item->getQty()))*$item->getQty();
         $isDiscount = true;
     } else {
         $discountSubTotal += ($item->getPrice()*$item->getQty());
