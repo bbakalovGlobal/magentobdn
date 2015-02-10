@@ -41,7 +41,7 @@ if(empty($_cartQty)) {
 $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
 $originalSubTotal = 0;
 foreach ($this->getQuote()->getAllItems() as $item) {
-    $originalSubTotal += $item->getProduct()->getPrice();
+    $originalSubTotal += ($item->getProduct()->getPrice()*$item->getQty());
 }
 ?>
 <div id="minicart-error-message" class="minicart-message"></div>
