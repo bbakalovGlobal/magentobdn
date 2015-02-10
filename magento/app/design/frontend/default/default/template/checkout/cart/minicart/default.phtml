@@ -31,6 +31,7 @@
 ?>
 <?php
 $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
+$discount = $_item->getDiscountAmount()/$_item->getQty();
 ?>
 <li class="item" xmlns="http://www.w3.org/1999/html">
     <?php if ($this->hasProductUrl()): ?>
@@ -68,7 +69,7 @@ $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
                                     <?php endif; ?>
                                     <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()+$_item->getWeeeTaxAppliedAmount()+$_item->getWeeeTaxDisposition()); ?>
                                 <?php else: ?>
-                                    <?php if ($showOldPrice && ($_item->getPrice() < $_item->getProduct()->getPrice())): ?>
+                                    <?php if ($showOldPrice && (($_item->getDiscountAmount() > 0) || ($_item->getPrice() < $_item->getProduct()->getPrice()))): ?>
                                         <span class="price-box-review">
                                             <p class="old-price">
                                                 <span class="price">
@@ -77,7 +78,7 @@ $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
                                             </p>
                                         </span>
                                     <?php endif; ?>
-                                    <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()) ?>
+                                    <?php echo ($discount > 0)?$this->helper('checkout')->formatPrice($_item->getCalculationPrice() - $discount):$this->helper('checkout')->formatPrice($_item->getCalculationPrice()); ?>
                                 <?php endif; ?>
                                 <?php if (Mage::helper('weee')->getApplied($_item)): ?>
                                     <br />

@@ -40,8 +40,16 @@ if(empty($_cartQty)) {
 <?php
 $showOldPrice = Mage::helper('tim_pricerules')->isShowOldPrice();
 $originalSubTotal = 0;
+$discountSubTotal = 0;
+$isDiscount = false;
 foreach ($this->getQuote()->getAllItems() as $item) {
     $originalSubTotal += ($item->getProduct()->getPrice()*$item->getQty());
+    if ($item->getDiscountAmount() > 0) {
+        $discountSubTotal += $item->getPrice()-($item->getDiscountAmount()/$item->getQty());
+        $isDiscount = true;
+    } else {
+        $discountSubTotal += ($item->getPrice()*$item->getQty());
+    }
 }
 ?>
 <div id="minicart-error-message" class="minicart-message"></div>
@@ -85,13 +93,13 @@ foreach ($this->getQuote()->getAllItems() as $item) {
                     <span class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></span>
                 <?php else: ?>
                     <span class="label"><?php echo $this->__('Cart Subtotal:') ?></span>
-                    <?php if ($showOldPrice && ($this->getQuote()->getBaseSubtotalWithDiscount() < $originalSubTotal)): ?>
+                    <?php if ($showOldPrice && ($isDiscount || ($discountSubTotal < $originalSubTotal))): ?>
                         <span class="price-box-review">
                             <span class="price">
                                 <?php echo $this->helper('checkout')->formatPrice($originalSubTotal); ?>
                             </span>
                         </span>
-                    <?php endif; ?> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
+                    <?php endif; ?> <?php echo Mage::helper('checkout')->formatPrice($discountSubTotal) ?>
                     <?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?>
                         <br />(<?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?>)
                     <?php endif; ?>
