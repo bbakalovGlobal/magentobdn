@@ -21,29 +21,24 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
 
     /**
      * @param Mage_Catalog_Model_Product $product
-     * @return bool
+     * @return mixed
      */
     public function isOldPrice(Mage_Catalog_Model_Product $product)
     {
         $productId  = $product->getId();
         $storeId    = $product->getStoreId();
         $websiteId  = Mage::app()->getStore($storeId)->getWebsiteId();
-        if ($product->hasCustomerGroupId()) {
-            $customerGroupId = $product->getCustomerGroupId();
-        } else {
-            $customerGroupId = Mage::getSingleton('customer/session')->getCustomerGroupId();
-        }
+        $customerGroupId = Mage::getSingleton('customer/session')->getCustomerGroupId();
         $dateTs = Mage::app()->getLocale()->date()->getTimestamp();
         $productRule = $this->getRuleFromProduct($dateTs, $websiteId, $customerGroupId, $productId);
-        $productRule = new Varien_Object($productRule);
-        if ($productRule->getRuleId()) {
-            $rule = $this->getHideOldPrice($productRule->getRuleId());
-            $rule = new Varien_Object($rule);
-            if ($rule->getHideOldPrice()) {
-                return ((int)$rule->getHideOldPrice() == 1) ? false : true;
+        $productRuleObj = new Varien_Object($productRule);
+        if ($productRuleObj->getRuleId()) {
+            $rule = $this->getHideOldPrice($productRuleObj->getRuleId());
+            $ruleObj = new Varien_Object($rule);
+            if (!is_null($ruleObj->getHideOldPrice())) {
+                return ((int)$ruleObj->getHideOldPrice() == 1) ? false : true;
             }
         }
-        return true;
     }
 
     /**
@@ -69,7 +64,6 @@ class Tim_PriceRules_Model_Rule extends Mage_Core_Model_Abstract
             ->where('from_time = 0 or from_time < ?', $date)
             ->where('to_time = 0 or to_time > ?', $date)
             ->order('sort_order ASC');
-
         return $adapter->raw_fetchRow($select);
     }
 

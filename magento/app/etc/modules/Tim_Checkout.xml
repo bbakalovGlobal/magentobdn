@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Tim
+ *
+ * @category   Tim
+ * @package    Tim_Checkout
+ * @copyright  Copyright (c) 2013 Tim (http://tim.pl)
+ * @author     Jacek Kiernicki (j.kiernicki@tim.pl)
+ */
+-->
+
+
+<config>
+    <modules>
+        <Tim_Checkout>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Tim_Checkout>
+        <depends>
+            <Mage_Checkout />
+        </depends>
+    </modules>
+</config>
