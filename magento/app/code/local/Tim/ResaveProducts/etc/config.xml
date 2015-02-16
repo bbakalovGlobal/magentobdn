@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/**
+ * Tim
+ *
+ * @category   Tim
+ * @package    Tim_ResaveProducts
+ * @copyright  Copyright (c) 2015 Tim (http://tim.pl)
+ * @author     Bogdan Bakalov
+ */
+-->
+
+<config>
+    <modules>
+        <Tim_ResaveProducts>
+            <version>0.1.0</version>
+        </Tim_ResaveProducts>
+    </modules>
+    <global>
+        <models>
+            <tim_resaveproducts>
+                <class>Tim_ResaveProducts_Model</class>
+            </tim_resaveproducts>
+        </models>
+        <blocks>
+            <tim_resaveproducts>
+                <class>Tim_ResaveProducts_Block</class>
+            </tim_resaveproducts>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <tim_resaveproducts>
+                <use>admin</use>
+                <args>
+                    <module>Tim_ResaveProducts</module>
+                    <frontName>tim_resaveproducts</frontName>
+                </args>
+            </tim_resaveproducts>
+        </routers>
+    </admin>
+</config>

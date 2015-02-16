@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Tim
+ *
+ * @category   Tim
+ * @package    Tim_ResaveProducts
+ * @copyright  Copyright (c) 2015 Tim (http://tim.pl)
+ * @author     Bogdan Bakalov
+ */
+-->
+<config>
+    <modules>
+        <Tim_ResaveProducts>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Tim_ResaveProducts>
+    </modules>
+</config>
