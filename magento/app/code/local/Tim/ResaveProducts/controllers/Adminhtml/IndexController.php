@@ -20,7 +20,7 @@ class Tim_ResaveProducts_Adminhtml_IndexController extends Mage_Adminhtml_Contro
     public function indexAction()
     {
         $this->lastItem = 0;
-        while ($collection = Mage::getModel('tim_resaveproducts/adminhtml_product')->getCollection($this->lastItem)) {
+        while ($collection = Mage::getModel('tim_resaveproducts/adminhtml_product')->getProductCollection($this->lastItem)) {
             if ($collection->getSize() < 1 || is_null($collection)) {
                 break;
             }

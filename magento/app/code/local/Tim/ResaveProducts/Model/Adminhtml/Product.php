@@ -23,7 +23,7 @@ class Tim_ResaveProducts_Model_Adminhtml_Product extends Mage_Core_Model_Abstrac
      * @param int $lastItem
      * @return Mage_Catalog_Model_Resource_Product_Collection
      */
-    public function getCollection($lastItem)
+    public function getProductCollection($lastItem)
     {
         $collection = Mage::getModel('catalog/product')->getCollection()
             ->addAttributeToSelect('*')
