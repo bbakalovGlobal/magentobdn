@@ -30,7 +30,7 @@ class Tim_ResaveProducts_Adminhtml_IndexController extends Mage_Adminhtml_Contro
                     $this->lastItem = $item->getId();
                 } catch (Exception $e) {
                     $this->_getSession()->addError(sprintf('Unable to save product %s', $item->getId()));
-                    throw new Mage_Exception($e->getMessage());
+                    Mage::throwException($e->getMessage());
                 }
                 $item = null;
                 unset($item);
