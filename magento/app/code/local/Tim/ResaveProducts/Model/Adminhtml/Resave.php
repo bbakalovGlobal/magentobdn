@@ -46,7 +46,8 @@ class Tim_ResaveProducts_Model_Adminhtml_Resave extends Mage_Core_Model_Abstract
             unset($collection);
         }
 
-        echo sprintf('%s products where resaved', $collectionCount);
+        echo PHP_EOL;
+        echo sprintf('%s products were resaved', $collectionCount);
         echo PHP_EOL;
         //$this->_getSession()->addSuccess(sprintf('%s products where resaved', $count));
         //$this->_redirectReferer();
