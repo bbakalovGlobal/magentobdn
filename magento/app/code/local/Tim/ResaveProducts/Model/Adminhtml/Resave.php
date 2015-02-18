@@ -59,10 +59,10 @@ class Tim_ResaveProducts_Model_Adminhtml_Resave extends Mage_Core_Model_Abstract
      * @param int $total
      */
     public function progressBar($done, $total){
-        $perc = ($done / $total) * 1000;
+        $perc = ($done / $total) * 100;
         $bar  = "[" . str_repeat("=", $perc);
         $bar  = substr($bar, 0, strlen($bar) - 1) . ">"; // Change the last = to > for aesthetics
-        $bar .= str_repeat(" ", 1000 - $perc) . "] - $perc% - $done/$total";
+        $bar .= str_repeat(" ", 100 - $perc) . "] - $perc% - $done/$total";
         echo "$bar\r"; // Note the \r. Put the cursor at the beginning of the line
     }
 }
