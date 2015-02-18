@@ -29,6 +29,8 @@ class Tim_ResaveProducts_Model_Adminhtml_Resave extends Mage_Core_Model_Abstract
             foreach ($collection as $item) {
                 try {
                     $product = Mage::getModel('catalog/product')->load($item->getId());
+                    $sku = $item->getTimAdditionalSku() ? $item->getTimAdditionalSku() : '';
+                    $product->setTimAdditionalSku($sku);
                     $product->save();
                     $this->lastItem = $item->getId();
                     $this->progressBar($count, $collectionCount);
