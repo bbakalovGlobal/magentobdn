@@ -28,7 +28,8 @@ class Tim_ResaveProducts_Model_Adminhtml_Resave extends Mage_Core_Model_Abstract
             }
             foreach ($collection as $item) {
                 try {
-                    $item->save();
+                    $product = Mage::getModel('catalog/product')->load($item->getId());
+                    $product->save();
                     $this->lastItem = $item->getId();
                     $this->progressBar($count, $collectionCount);
                     $count++;
