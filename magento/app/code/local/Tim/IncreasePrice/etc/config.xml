@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/**
+ * Tim
+ *
+ * @category   Tim
+ * @package    Tim_IncreasePrice
+ * @copyright  Copyright (c) 2015 Tim (http://tim.pl)
+ * @author     Bogdan Bakalov
+ */
+-->
+
+<config>
+    <modules>
+        <Tim_IncreasePrice>
+            <version>0.1.0</version>
+        </Tim_IncreasePrice>
+    </modules>
+    <global>
+        <models>
+            <tim_increaserice>
+                <class>Tim_IncreasePrice_Model</class>
+            </tim_increaserice>
+        </models>
+    </global>
+</config>
