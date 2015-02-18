@@ -26,29 +26,29 @@
  */
 -->
 <config>
-    <sections>
-        <catalog>
-            <groups>
-                <services translate="label">
-                    <label>Services</label>
-                    <frontend_type>text</frontend_type>
-                    <sort_order>100</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <fields>
-                        <resave_products translate="label">
-                            <label>Resave Products</label>
-                            <frontend_type>button</frontend_type>
-                            <frontend_model>tim_resaveproducts/adminhtml_button</frontend_model>
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </resave_products>
-                    </fields>
-                </services>
-            </groups>
-        </catalog>
-    </sections>
+    <!--<sections>-->
+        <!--<catalog>-->
+            <!--<groups>-->
+                <!--<services translate="label">-->
+                    <!--<label>Services</label>-->
+                    <!--<frontend_type>text</frontend_type>-->
+                    <!--<sort_order>100</sort_order>-->
+                    <!--<show_in_default>1</show_in_default>-->
+                    <!--<show_in_website>1</show_in_website>-->
+                    <!--<show_in_store>1</show_in_store>-->
+                    <!--<fields>-->
+                        <!--<resave_products translate="label">-->
+                            <!--<label>Resave Products</label>-->
+                            <!--<frontend_type>button</frontend_type>-->
+                            <!--<frontend_model>tim_resaveproducts/adminhtml_button</frontend_model>-->
+                            <!--<sort_order>1</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                        <!--</resave_products>-->
+                    <!--</fields>-->
+                <!--</services>-->
+            <!--</groups>-->
+        <!--</catalog>-->
+    <!--</sections>-->
 </config>
