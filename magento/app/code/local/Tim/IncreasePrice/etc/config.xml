@@ -18,10 +18,43 @@
         </Tim_IncreasePrice>
     </modules>
     <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <promo_catalog_edit_tab_actions>Tim_IncreasePrice_Block_Adminhtml_Catalog_Edit_Tab_Actions</promo_catalog_edit_tab_actions>
+                </rewrite>
+            </adminhtml>
+        </blocks>
         <models>
-            <tim_increaserice>
+            <tim_increaseprice>
                 <class>Tim_IncreasePrice_Model</class>
-            </tim_increaserice>
+            </tim_increaseprice>
+            <catalogrule>
+                <rewrite>
+                    <action_index_refresh>Tim_IncreasePrice_Model_Action_Index_Refresh</action_index_refresh>
+                    <observer>Tim_IncreasePrice_Model_Observer</observer>
+                </rewrite>
+            </catalogrule>
         </models>
+        <resources>
+            <tim_increaseprice_setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+                <setup>
+                    <module>Tim_IncreasePrice</module>
+                </setup>
+            </tim_increaseprice_setup>
+            <tim_increaseprice_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </tim_increaseprice_write>
+            <tim_increaseprice_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </tim_increaseprice_read>
+        </resources>
     </global>
 </config>
