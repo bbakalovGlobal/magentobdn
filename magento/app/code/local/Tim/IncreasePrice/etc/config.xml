@@ -14,7 +14,7 @@
 <config>
     <modules>
         <Tim_IncreasePrice>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </Tim_IncreasePrice>
     </modules>
     <global>
@@ -22,6 +22,7 @@
             <adminhtml>
                 <rewrite>
                     <promo_catalog_edit_tab_actions>Tim_IncreasePrice_Block_Adminhtml_Catalog_Edit_Tab_Actions</promo_catalog_edit_tab_actions>
+                    <promo_quote_edit_tab_actions>Tim_IncreasePrice_Block_Adminhtml_Quote_Edit_Tab_Actions</promo_quote_edit_tab_actions>
                 </rewrite>
             </adminhtml>
         </blocks>
@@ -29,6 +30,11 @@
             <tim_increaseprice>
                 <class>Tim_IncreasePrice_Model</class>
             </tim_increaseprice>
+            <catalogrule_resource>
+                <rewrite>
+                    <rule_product_price>Tim_IncreasePrice_Model_Resource_Rule_Product_Price</rule_product_price>
+                </rewrite>
+            </catalogrule_resource>
             <catalogrule>
                 <rewrite>
                     <action_index_refresh>Tim_IncreasePrice_Model_Action_Index_Refresh</action_index_refresh>
@@ -57,4 +63,26 @@
             </tim_increaseprice_read>
         </resources>
     </global>
+    <frontend>
+        <events>
+            <salesrule_validator_process>
+                <observers>
+                    <tim_increaseprice>
+                        <type>singleton</type>
+                        <class>tim_increaseprice/quote_observer</class>
+                        <method>increasePrice</method>
+                    </tim_increaseprice>
+                </observers>
+            </salesrule_validator_process>
+            <sales_quote_collect_totals_before>
+                <observers>
+                    <tim_increaseprice>
+                        <type>singleton</type>
+                        <class>tim_increaseprice/quote_observer</class>
+                        <method>salesQuoteCollectTotalsBefore</method>
+                    </tim_increaseprice>
+                </observers>
+            </sales_quote_collect_totals_before>
+        </events>
+    </frontend>
 </config>
