@@ -22,7 +22,6 @@
             <adminhtml>
                 <rewrite>
                     <promo_catalog_edit_tab_actions>Tim_IncreasePrice_Block_Adminhtml_Catalog_Edit_Tab_Actions</promo_catalog_edit_tab_actions>
-                    <promo_quote_edit_tab_actions>Tim_IncreasePrice_Block_Adminhtml_Quote_Edit_Tab_Actions</promo_quote_edit_tab_actions>
                 </rewrite>
             </adminhtml>
         </blocks>
@@ -63,26 +62,4 @@
             </tim_increaseprice_read>
         </resources>
     </global>
-    <frontend>
-        <events>
-            <salesrule_validator_process>
-                <observers>
-                    <tim_increaseprice>
-                        <type>singleton</type>
-                        <class>tim_increaseprice/quote_observer</class>
-                        <method>increasePrice</method>
-                    </tim_increaseprice>
-                </observers>
-            </salesrule_validator_process>
-            <sales_quote_collect_totals_before>
-                <observers>
-                    <tim_increaseprice>
-                        <type>singleton</type>
-                        <class>tim_increaseprice/quote_observer</class>
-                        <method>salesQuoteCollectTotalsBefore</method>
-                    </tim_increaseprice>
-                </observers>
-            </sales_quote_collect_totals_before>
-        </events>
-    </frontend>
 </config>
