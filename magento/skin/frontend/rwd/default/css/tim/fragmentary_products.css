@@ -1,0 +1,12 @@
+/*.fragmentary{background: grey;margin: 85px 0 1px 0;display: none;}*/
+/*.available_fragments span{border-left: 1px solid black;border-right: 1px solid black;border-bottom: 1px solid black;border-top: 1px solid black;}*/
+ul.net_gross_price {margin: 0;padding: 4px;}
+ul.net_gross_price li {display: inline;margin-right: 5px;padding: 3px;}
+#cartSummary {clear:both; float:left;}
+#calculator .price_width{width:80px}
+#calculator table{margin-top:20px}
+#calculator table th{background:#f2f2f2;padding:6px;text-align:center}
+#calculator table td{padding:5px 10px;border-bottom:1px solid #eaeaea;text-align:center;border-left:1px solid #eaeaea}
+#calculator table .name_td{border-left:0;text-align:right}
+#calculator .bg_tab_sum{background:#f2f2f2;padding:6px;font-size:14px}
+/*.cross {width: 12px;height: 12px;}*/

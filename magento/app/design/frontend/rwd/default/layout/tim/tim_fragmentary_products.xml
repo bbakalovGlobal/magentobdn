@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Tim
+ *
+ * @category   Tim
+ * @package    Tim_FragmentaryProducts
+ * @copyright  Copyright (c) 2015 Tim (http://tim.pl)
+ * @author     Bogdan Bakalov
+ */
+-->
+
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/tim/fragmentary_products.css</stylesheet></action>
+        </reference>
+    </default>
+    <catalog_category_default>
+        <reference name="product_list">
+            <block type="tim_fragmentary_products/calculator" name="calculator" as="calculator" template="tim/fragmentary_products/fragmentary_products.phtml" />
+            <action method="setTemplate"><template>tim/fragmentary_products/catalog/product/list.phtml</template></action>
+        </reference>
+    </catalog_category_default>
+    <catalog_category_layered>
+        <reference name="product_list">
+            <block type="tim_fragmentary_products/calculator" name="calculator" as="calculator" template="tim/fragmentary_products/fragmentary_products.phtml" />
+            <action method="setTemplate"><template>tim/fragmentary_products/catalog/product/list.phtml</template></action>
+        </reference>
+    </catalog_category_layered>
+    <catalogsearch_result_index>
+        <reference name="search_result_list">
+            <block type="tim_fragmentary_products/calculator" name="calculator" as="calculator" template="tim/fragmentary_products/fragmentary_products.phtml" />
+            <action method="setTemplate"><template>tim/fragmentary_products/catalog/product/list.phtml</template></action>
+        </reference>
+    </catalogsearch_result_index>
+    <catalogsearch_advanced_result>
+        <reference name="search_result_list">
+            <block type="tim_fragmentary_products/calculator" name="calculator" as="calculator" template="tim/fragmentary_products/fragmentary_products.phtml" />
+            <action method="setTemplate"><template>tim/fragmentary_products/catalog/product/list.phtml</template></action>
+        </reference>
+    </catalogsearch_advanced_result>
+
+    <checkout_cart_index translate="label">
+        <reference name="checkout.cart">
+            <action method="setCartTemplate"><value>tim/fragmentary_products/checkout/cart.phtml</value></action>
+            <action method="addItemRender"><type>fragmentary</type><block>checkout/cart_item_renderer</block><template>tim/fragmentary_products/checkout/cart/item/default.phtml</template></action>
+        </reference>
+    </checkout_cart_index>
+</layout>

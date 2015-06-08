@@ -1,0 +1,86 @@
+<?php
+    // check if quote item is set
+    $item = $this->getQuoteItem();
+    $product = null;
+    $objectId = null;
+    $fragments = null;
+
+    // if it's set then use it as the main object and take all info from it
+    if (isset($item)) {
+        $product = $item->getProduct();
+        $objectId = $item->getId();
+        $fragments = $item->getTimFragments();
+        if (isset($fragments)) {
+            $fragments = explode(',', $fragments);
+        }
+    } else {
+        $product = $this->getProduct();
+        $objectId = $product->getId();
+    }
+    $productId = $product->getId();
+?>
+<input type="hidden" id="fragment_values_<?php echo $objectId ?>" name="fragment_values_<?php echo $objectId ?>" value="">
+<input type="hidden" id="max_fragment_<?php echo $objectId ?>" value="<?php echo $this->getMaxFragment($product->getTimFragments()) ?>">
+<input type="hidden" id="fragments_amount_<?php echo $objectId ?>" value="<?php echo $this->getFragmentsAmount($product->getTimFragments()) ?>">
+<input type="hidden" id="price_<?php echo $objectId ?>" value="<?php echo round($this->getPriceWithTax($productId), 2) ?>">
+<input type="hidden" id="price_without_tax_<?php echo $objectId ?>" value="<?php echo round($this->getPriceWithoutTax($productId), 2) ?>">
+<div class="fragmentary">
+    <div>
+        <input class="fragment-input" id="fragment_<?php echo $objectId ?>" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" type="text" placeholder="Fragment"/>
+        <input type="button" value="<?php echo $this->__('Add'); ?>" onclick="addFragment('<?php echo $objectId ?>', jQuery('#fragment_<?php echo $objectId ?>').val(), '<?php echo $this->getAddToCartUrl($product) ?>');"/>
+        <?php if (isset($item)): ?>
+            <input type="button" value="<?php echo $this->__('Save'); ?>" onclick="saveFragment();"/>
+        <?php endif ?>
+
+        <div id="display_<?php echo $objectId ?>"></div>
+    </div>
+</div>
+<ul class="net_gross_price">
+    <li class="net_price">
+        <span><?php echo $this->__('Net price: ') . round($this->getPriceWithoutTax($productId), 2) ?></span>
+    </li>
+    <li class="gross_price"><span><?php echo $this->__('Gross price: ') . round($this->getPriceWithTax($productId), 2) ?></span></li>
+</ul>
+<div class="added_fragments">
+</div>
+<a href="javascript:void(0);" id="add-info" onclick="toggle_visibility('additional-info-<?php echo $objectId ?>')"><span>More info</span></a>
+<div id="additional-info-<?php echo $objectId ?>" style="display: none">
+    <div class="available_fragments">
+        <?php if ($product->getTimFragments()) : ?>
+            <?php echo $this->__('Available fragments: ') . $this->getAvailableFragments($product); ?>
+        <?php endif ?>
+    </div>
+    <div id="static-block-description">
+        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('calculator_fragments_description')->toHtml() ?>
+    </div>
+    <div id="calculator">
+        <table id="cartSummary">
+            <tr>
+                <th></th>
+                <th class="price_width"><?php echo $this->__('Netto') ?></th>
+                <th class="price_width"><?php echo $this->__('Gross') ?></th>
+            </tr>
+            <tr class="custom">
+                <td class="name_td"><?php echo $this->__('Wartość  odcinków ciętych') ?></td>
+                <td class="netto" id="netto_custom_price_<?php echo $objectId ?>">0</td>
+                <td class="brutto" id="brutto_custom_price_<?php echo $objectId ?>">0</td>
+            </tr>
+<!--            Temporarily commented out-->
+<!--            <tr class="bg_tab_sum --><?php //echo $productId ?><!--">-->
+<!--                <td class="name_td"><b>--><?php //echo $this->__('Total') ?><!--</b></td>-->
+<!--                <td class="netto" id="netto_price_--><?php //echo $productId ?><!--"><b>0</b></td>-->
+<!--                <td class="brutto" id="brutto_price_--><?php //echo $productId ?><!--"><b>0</b></td>-->
+<!--            </tr>-->
+        </table>
+    </div>
+</div>
+</p>
+<?php if (is_array($fragments)): ?>
+    <script type="text/javascript">
+        jQuery( document ).ready(function( ) {
+            <?php foreach($fragments as $fragment): ?>
+                addFragment('<?php echo $objectId ?>', '<?php echo $fragment ?>', '<?php echo $this->getAddToCartUrl($product) ?>');
+            <?php endforeach ?>
+        });
+    </script>
+<?php endif ?>

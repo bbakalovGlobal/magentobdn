@@ -49,6 +49,7 @@ Default layout, loads most of the pages
                     <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/minicart/default.phtml</template></action>
                     <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/minicart/default.phtml</template></action>
                     <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/minicart/default.phtml</template></action>
+                    <action method="addItemRender"><type>fragmentary</type><block>checkout/cart_item_renderer</block><template>tim/fragmentary_products/checkout/cart/minicart/default.phtml</template></action>
 
                     <block type="core/text_list" name="cart_sidebar.cart_promotion" as="cart_promotion" translate="label" module="checkout">
                         <label>Mini-cart promotion block</label>
@@ -82,7 +83,8 @@ Default layout, loads most of the pages
         </reference>
         <reference name="content">
             <block type="checkout/cart" name="checkout.cart">
-                <action method="setCartTemplate"><value>checkout/cart.phtml</value></action>
+                <!--<action method="setCartTemplate"><value>checkout/cart.phtml</value></action>-->
+                <action method="setCartTemplate"><value>tim/fragmentary_products/checkout/cart.phtml</value></action>
                 <action method="setEmptyTemplate"><value>checkout/cart/noItems.phtml</value></action>
                 <action method="chooseTemplate"/>
                 <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/item/default.phtml</template></action>
