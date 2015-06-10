@@ -88,7 +88,7 @@ $_helper = $this->helper('catalog/output');
                                 <div class="product-secondary">
                                     <?php if(!$_product->canConfigure() && $_product->isSaleable()): ?>
                                         <?php if($_product->getTypeId() == 'fragmentary'): ?>
-                                            <p class="action add-to-cart-calc"><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart-calc"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
+                                            <p class="action add-to-cart-calc-list"><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart-calc"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
                                         <?php else: ?>
                                             <p class="action"><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
                                         <?php endif; ?>
@@ -112,7 +112,7 @@ $_helper = $this->helper('catalog/output');
                                 </div>
                             </div>
                             <?php if($_product->getTypeId() == 'fragmentary'): ?>
-                                <div class="calculator" style="background: grey;color: #000;margin: 85px 0 1px 0;display: none;">
+                                <div class="calculator-list" style="background: grey;color: #000;margin: 85px 0 1px 0;display: none;">
                                     <?php echo $this->getChild('calculator')->setProduct($_product)->toHtml() ?>
                                 </div>
                             <?php endif; ?>
@@ -159,7 +159,11 @@ $_helper = $this->helper('catalog/output');
                             <?php endif; ?>
                             <div class="actions">
                                 <?php if(!$_product->canConfigure() && $_product->isSaleable()): ?>
-                                    <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                    <?php if($_product->getTypeId() == 'fragmentary'): ?>
+                                        <p class="action add-to-cart-calc-grid"><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart-calc"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
+                                    <?php else: ?>
+                                        <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                    <?php endif; ?>
                                 <?php elseif($_product->getStockItem() && $_product->getStockItem()->getIsInStock()): ?>
                                     <a title="<?php echo $this->__('View Details') ?>" class="button" href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->__('View Details') ?></a>
                                 <?php else: ?>
@@ -175,6 +179,11 @@ $_helper = $this->helper('catalog/output');
                                 </ul>
                             </div>
                         </div>
+                        <?php if($_product->getTypeId() == 'fragmentary'): ?>
+                            <div class="calculator-grid" style="background: grey;color: #000;display: none;">
+                                <?php echo $this->getChild('calculator')->setProduct($_product)->toHtml() ?>
+                            </div>
+                        <?php endif; ?>
                     </li>
                     <?php /*if ($i%$_columnCount==0 || $i==$_collectionSize): ?>
             <?php endif*/ ?>
@@ -202,10 +211,16 @@ if ($this->getChild('after')) {
 ?>
 <script type="text/javascript">
     var fragmentsUrl = "'" + '<?php echo $this->getAddToCartUrl($_product) ?>' + "'";
-    jQuery(".add-to-cart-calc").click(function(){
-        var calculator = jQuery(this).parents().eq(3).find(".calculator");
+    jQuery(".add-to-cart-calc-list").click(function(){
+        var calculator = jQuery(this).parents().eq(3).find(".calculator-list");
         calculator.show();
         jQuery(this).html('<p class="action"><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation(' + "'<?php echo $this->getAddToCartUrl($_product) ?>'" + ')"><span><span><?php echo $this->__('Ready') ?></span></span></button></p>');
+    });
+
+    jQuery(".add-to-cart-calc-grid").click(function(){
+        var calculator = jQuery(this).parents().eq(2).find(".calculator-grid");
+        calculator.show();
+        jQuery(this).html('<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation(' + "'<?php echo $this->getAddToCartUrl($_product) ?>'" + ')"><span><span><?php echo $this->__('Ready') ?></span></span></button>');
     });
 
     function toggle_visibility(id) {
@@ -272,8 +287,8 @@ if ($this->getChild('after')) {
     function updatePriceTable(amount, productId) {
         var price = jQuery("#price_"+productId).val();
         var priceWithoutTax = jQuery("#price_without_tax_"+productId).val();
-        var totalPrice = amount * price;
-        var totalPriceWithoutTax = amount * priceWithoutTax;
+        var totalPrice = (amount * price).toFixed(2);
+        var totalPriceWithoutTax = (amount * priceWithoutTax).toFixed(2);
 //        Temporarily commented out
 //        jQuery("#netto_price_"+productId).html('<b>' + totalPriceWithoutTax + '</b>');
 //        jQuery("#brutto_price_"+productId).html('<b>' + totalPrice + '</b>');

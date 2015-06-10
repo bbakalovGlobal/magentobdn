@@ -29,7 +29,7 @@
         <input class="fragment-input" id="fragment_<?php echo $objectId ?>" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" type="text" placeholder="Fragment"/>
         <input type="button" value="<?php echo $this->__('Add'); ?>" onclick="addFragment('<?php echo $objectId ?>', jQuery('#fragment_<?php echo $objectId ?>').val(), '<?php echo $this->getAddToCartUrl($product) ?>');"/>
         <?php if (isset($item)): ?>
-            <input type="button" value="<?php echo $this->__('Save'); ?>" onclick="saveFragment();"/>
+            <input type="button" value="<?php echo $this->__('Save'); ?>" onclick="saveFragment('<?php echo $objectId ?>');"/>
         <?php endif ?>
 
         <div id="display_<?php echo $objectId ?>"></div>
