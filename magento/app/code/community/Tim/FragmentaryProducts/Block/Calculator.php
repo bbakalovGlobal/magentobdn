@@ -8,7 +8,7 @@
  * @copyright  Copyright (c) 2015 Tim (http://tim.pl)
  * @author     Bogdan Bakalov
  */
-class Tim_FragmentaryProducts_Block_Calculator extends Mage_Catalog_Block_Product_List
+class Tim_FragmentaryProducts_Block_Calculator extends Mage_Catalog_Block_Product_Abstract
 {
     /**
      * Return available fragments

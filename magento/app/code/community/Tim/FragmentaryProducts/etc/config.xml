@@ -115,17 +115,26 @@
             </checkout>
         </routers>
     </frontend>
-    <!--<adminhtml>-->
-        <!--<events>-->
-            <!--<catalog_product_save_commit_after>-->
-                <!--<observers>-->
-                    <!--<fragmentary_save_product_data>-->
-                        <!--<type>singleton</type>-->
-                        <!--<class>tim_fragmentary_products/observer</class>-->
-                        <!--<method>saveQty</method>-->
-                    <!--</fragmentary_save_product_data>-->
-                <!--</observers>-->
-            <!--</catalog_product_save_commit_after>-->
-        <!--</events>-->
-    <!--</adminhtml>-->
+    <frontend>
+        <translate>
+            <modules>
+                <tim_fragmentary_products>
+                    <files>
+                        <default>Tim_FragmentaryProducts.csv</default>
+                    </files>
+                </tim_fragmentary_products>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <tim_fragmentary_products>
+                    <files>
+                        <default>Tim_FragmentaryProducts.csv</default>
+                    </files>
+                </tim_fragmentary_products>
+            </modules>
+        </translate>
+    </adminhtml>
 </config>

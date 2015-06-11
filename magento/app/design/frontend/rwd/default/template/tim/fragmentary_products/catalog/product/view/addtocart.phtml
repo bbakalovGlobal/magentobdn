@@ -31,7 +31,8 @@
         <?php if(!$_product->isGrouped()): ?>
             <div class="qty-wrapper">
                 <label for="qty"><?php echo $this->__('Qty:') ?></label>
-                <input type="text" pattern="\d*" name="qty" id="qty" maxlength="12" value="<?php echo max($this->getProductDefaultQty() * 1, 1) ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
+                <input type="text" pattern="\d*" name="qty" id="qty" maxlength="12" value="<?php echo max($this->getProductDefaultQty() * 1, 1) ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty"
+                    <?php if ($_product->getTypeId() == 'fragmentary') echo 'disabled'; ?>/>
             </div>
         <?php endif; ?>
         <div class="add-to-cart-buttons">
@@ -46,6 +47,111 @@
     <?php if($_product->getTypeId() == 'fragmentary'): ?>
         <div class="calculator" style="background: grey;color: #000;display: none;">
             <?php //echo $this->getChild('calculator')->setProduct($_product)->toHtml(); ?>
+                <?php
+                echo $this->getLayout()->createBlock('tim_fragmentary_products/calculator')
+                    ->setTemplate('tim/fragmentary_products/fragmentary_products.phtml')
+//                    ->setQuoteItem($_item)
+                    ->toHtml();
+                ?>
         </div>
     <?php endif; ?>
 <?php endif; ?>
+<script type="text/javascript">
+    var fragmentsUrl = "'" + '<?php echo $this->getAddToCartUrl($_product) ?>' + "'";
+    jQuery(".add-to-cart-calc").click(function(){
+        var calculator = jQuery(this).parents().eq(3).find(".calculator");
+        calculator.show();
+        jQuery(this).html('<button type="button" title="<?php echo $this->__('Ready') ?>" class="button btn-cart" onclick="alert(' + "'<?php echo $this->__('Fragment not selected. Please enter some fragment.') ?>'" + ')"><span><span><?php echo $this->__('Ready') ?></span></span></button>');
+    });
+
+    function toggle_visibility(id) {
+        var element = document.getElementById(id);
+        if (element.style.display == 'block') {
+            element.style.display = 'none';
+        }else {
+            element.style.display = 'block';
+        }
+    }
+
+    function addFragment(productId, fragmentValue, addToCartUrl) {
+        var fragmentsHtml = [];
+        var fragmentInput = parseInt(fragmentValue);
+        if ((fragmentInput!='') && (fragmentInput > 0)) {
+            // check for max fragment
+            if (fragmentInput > parseInt(jQuery("#max_fragment_"+productId).val())) {
+                alert('<?php echo $this->__('The maximum fragment length was exceeded, please enter a smaller value.') ?>');
+                return false;
+            }
+
+            var fragmentsBox = jQuery("#display_"+productId);
+            if (jQuery("#fragment_values_"+productId).val()!='') {
+                var fragmentValues = jQuery("#fragment_values_"+productId).val().split(',');
+            } else {
+                var fragmentValues = [];
+            }
+            fragmentValues.push(fragmentInput);
+
+            var amount = 0;
+            jQuery.each( fragmentValues, function( i, val ) {
+                fragmentsHtml.push('<span class="fragment-value-'+productId+'" onclick="deleteFragment(this, '+productId+', \''+addToCartUrl+'\')">'+val+'</span>');
+                amount+=parseInt(val);
+            });
+            // check for the fragment amount
+            if (amount > parseInt(jQuery("#fragments_amount_"+productId).val())) {
+                alert('<?php echo $this->__('The total fragments length was exceeded, please enter a smaller value.') ?>');
+                return false;
+            }
+
+            jQuery("#fragment_"+productId).val('');
+            fragmentsBox.html(fragmentsHtml.join(" "));
+            jQuery("#fragment_values_"+productId).val(fragmentValues.join(','));
+            fragmentsUrl = "'" + addToCartUrl + 'fragments/' + fragmentValues + "'";
+            jQuery(".btn-cart").attr("onclick", 'setLocation(' + fragmentsUrl + ')');
+            updatePriceTable(amount, productId);
+        }
+    }
+
+    function deleteFragment(element, productId, addToCartUrl) {
+        jQuery(element).remove();
+        var fragments = [];
+        var amount = 0;
+        jQuery('.fragment-value-'+productId).each(function() {
+            fragments.push(jQuery(this).html());
+            amount+=parseInt(jQuery(this).html());
+        });
+        jQuery("#fragment_values_"+productId).val(fragments.join(','));
+        fragmentsUrl = "'" + addToCartUrl + 'fragments/' + fragments + "'";
+//        jQuery(".btn-cart").attr("onclick", 'setLocation(' + fragmentsUrl + ')');
+        if(jQuery("#fragment_values_"+productId).val()!=''){
+            jQuery(".btn-cart").attr("onclick", 'setLocation(' + fragmentsUrl + ')');
+        }else{
+            jQuery(".btn-cart").attr("onclick", "alert("+'"<?php echo $this->__('Fragment not selected. Please enter some fragment.') ?>"'+")");
+        }
+        updatePriceTable(amount, productId);
+    }
+
+    function updatePriceTable(amount, productId) {
+        var price = jQuery("#price_"+productId).val();
+        var priceWithoutTax = jQuery("#price_without_tax_"+productId).val();
+        var totalPrice = (amount * price).toFixed(2);
+        var totalPriceWithoutTax = (amount * priceWithoutTax).toFixed(2);
+//        Temporarily commented out
+//        jQuery("#netto_price_"+productId).html('<b>' + totalPriceWithoutTax + '</b>');
+//        jQuery("#brutto_price_"+productId).html('<b>' + totalPrice + '</b>');
+        jQuery("#netto_custom_price_"+productId).html(totalPriceWithoutTax);
+        jQuery("#brutto_custom_price_"+productId).html(totalPrice);
+    }
+
+    jQuery(".fragment-input").keydown(function(event) {
+        // Allow only backspace and delete
+        if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 ) {
+            // let it happen, don't do anything
+        }
+        else {
+            // Ensure that it is a number and stop the keypress
+            if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                event.preventDefault();
+            }
+        }
+    });
+</script>

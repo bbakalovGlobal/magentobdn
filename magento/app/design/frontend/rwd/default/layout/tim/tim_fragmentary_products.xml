@@ -40,20 +40,13 @@
             <action method="setTemplate"><template>tim/fragmentary_products/catalog/product/list.phtml</template></action>
         </reference>
     </catalogsearch_advanced_result>
-
     <catalog_product_view translate="label">
-        <block type="tim_fragmentary_products/calculator" name="calculator" as="calculator" template="tim/fragmentary_products/fragmentary_products.phtml" />
-        <reference name="product.info">
-            <!--<block type="tim_fragmentary_products/calculator" name="calculator" as="calculator" template="tim/fragmentary_products/fragmentary_products.phtml" />-->
-            <action method="setTemplate"><template>tim/fragmentary_products/catalog/product/view.phtml</template></action>
             <reference name="product.info.addtocart">
                 <action method="setTemplate">
                     <template>tim/fragmentary_products/catalog/product/view/addtocart.phtml</template>
                 </action>
             </reference>
-        </reference>
     </catalog_product_view>
-
     <checkout_cart_index translate="label">
         <reference name="checkout.cart">
             <action method="setCartTemplate"><value>tim/fragmentary_products/checkout/cart.phtml</value></action>

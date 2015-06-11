@@ -20,6 +20,7 @@
     $productId = $product->getId();
 ?>
 <input type="hidden" id="fragment_values_<?php echo $objectId ?>" name="fragment_values_<?php echo $objectId ?>" value="">
+<input type="hidden" class="product_id" value="<?php echo $productId ?>">
 <input type="hidden" id="max_fragment_<?php echo $objectId ?>" value="<?php echo $this->getMaxFragment($product->getTimFragments()) ?>">
 <input type="hidden" id="fragments_amount_<?php echo $objectId ?>" value="<?php echo $this->getFragmentsAmount($product->getTimFragments()) ?>">
 <input type="hidden" id="price_<?php echo $objectId ?>" value="<?php echo round($this->getPriceWithTax($productId), 2) ?>">

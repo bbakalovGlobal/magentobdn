@@ -214,13 +214,13 @@ if ($this->getChild('after')) {
     jQuery(".add-to-cart-calc-list").click(function(){
         var calculator = jQuery(this).parents().eq(3).find(".calculator-list");
         calculator.show();
-        jQuery(this).html('<p class="action"><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation(' + "'<?php echo $this->getAddToCartUrl($_product) ?>'" + ')"><span><span><?php echo $this->__('Ready') ?></span></span></button></p>');
+        jQuery(this).html('<p class="action"><button type="button" title="<?php echo $this->__('Ready') ?>" class="button btn-cart" onclick="alert(' + "'<?php echo $this->__('Fragment not selected. Please enter some fragment.') ?>'" + ')"><span><span><?php echo $this->__('Ready') ?></span></span></button></p>');
     });
 
     jQuery(".add-to-cart-calc-grid").click(function(){
         var calculator = jQuery(this).parents().eq(2).find(".calculator-grid");
         calculator.show();
-        jQuery(this).html('<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation(' + "'<?php echo $this->getAddToCartUrl($_product) ?>'" + ')"><span><span><?php echo $this->__('Ready') ?></span></span></button>');
+            jQuery(this).html('<button type="button" title="<?php echo $this->__('Ready') ?>" class="button btn-cart" onclick="alert(' + "'<?php echo $this->__('Fragment not selected. Please enter some fragment.') ?>'" + ')"><span><span><?php echo $this->__('Ready') ?></span></span></button>');
     });
 
     function toggle_visibility(id) {
@@ -238,7 +238,7 @@ if ($this->getChild('after')) {
         if ((fragmentInput!='') && (fragmentInput > 0)) {
             // check for max fragment
             if (fragmentInput > parseInt(jQuery("#max_fragment_"+productId).val())) {
-                alert('The maximum fragment length was exceeded, please enter a smaller value.');
+                alert('<?php echo $this->__('The maximum fragment length was exceeded, please enter a smaller value.') ?>');
                 return false;
             }
 
@@ -257,7 +257,7 @@ if ($this->getChild('after')) {
             });
             // check for the fragment amount
             if (amount > parseInt(jQuery("#fragments_amount_"+productId).val())) {
-                alert('The total fragments length was exceeded, please enter a smaller value.');
+                alert('<?php echo $this->__('The total fragments length was exceeded, please enter a smaller value.') ?>');
                 return false;
             }
 
@@ -280,9 +280,13 @@ if ($this->getChild('after')) {
         });
         jQuery("#fragment_values_"+productId).val(fragments.join(','));
         fragmentsUrl = "'" + addToCartUrl + 'fragments/' + fragments + "'";
-        jQuery(".btn-cart").attr("onclick", 'setLocation(' + fragmentsUrl + ')');
+        if(jQuery("#fragment_values_"+productId).val()!=''){
+            jQuery(".btn-cart").attr("onclick", 'setLocation(' + fragmentsUrl + ')');
+        }else{
+            jQuery(".btn-cart").attr("onclick", "alert("+'"<?php echo $this->__('Fragment not selected. Please enter some fragment.') ?>"'+")");
+        }
         updatePriceTable(amount, productId);
-    };
+    }
 
     function updatePriceTable(amount, productId) {
         var price = jQuery("#price_"+productId).val();

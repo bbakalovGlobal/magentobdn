@@ -201,7 +201,7 @@
         if ((fragmentInput!='') && (fragmentInput > 0)) {
             // check for max fragment
             if (fragmentInput > parseInt(jQuery("#max_fragment_"+productId).val())) {
-                alert('The maximum fragment length was exceeded, please enter a smaller value.');
+                alert('<?php echo $this->__('The maximum fragment length was exceeded, please enter a smaller value.') ?>');
                 return false;
             }
 
@@ -220,7 +220,7 @@
             });
             // check for the fragment amount
             if (amount > parseInt(jQuery("#fragments_amount_"+productId).val())) {
-                alert('The total fragments length was exceeded, please enter a smaller value.');
+                alert('<?php echo $this->__('The total fragments length was exceeded, please enter a smaller value.') ?>');
                 return false;
             }
 
@@ -237,7 +237,7 @@
         if(jQuery("#fragment_values_"+productId).val()!=''){
             jQuery('#update_cart_form').submit();
         }else{
-            alert('Fragment not selected. Please enter some fragment.');
+            alert('<?php echo $this->__('Fragment not selected. Please enter some fragment.') ?>');
             return false;
         }
     }
@@ -254,7 +254,7 @@
         fragmentsUrl = "'" + addToCartUrl + 'fragments/' + fragments + "'";
         jQuery(".btn-cart").attr("onclick", 'setLocation(' + fragmentsUrl + ')');
         updatePriceTable(amount, productId);
-    };
+    }
 
     function updatePriceTable(amount, productId) {
         var price = jQuery("#price_"+productId).val();
